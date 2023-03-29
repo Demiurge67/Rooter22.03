@@ -25,7 +25,7 @@ Target-Profile-Description:
 
 Target-Profile: DEVICE_img_creator-ci40
 Target-Profile-Name: Imagination Technologies Marduk board (Imagination Technologies Creator Ci40 (VL-62899))
-Target-Profile-Packages: kmod-tpm-i2c-infineon kmod-ca8210 wpan-tools 
+Target-Profile-Packages: kmod-tpm-i2c-infineon kmod-ca8210 wpan-tools
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: img,creator-ci40
 
@@ -40,7 +40,7 @@ Alternative device titles:
 
 Target-Profile: DEVICE_img_creator-ci40
 Target-Profile-Name: Imagination Technologies Creator Ci40 (VL-62899)
-Target-Profile-Packages: kmod-tpm-i2c-infineon kmod-ca8210 wpan-tools 
+Target-Profile-Packages: kmod-tpm-i2c-infineon kmod-ca8210 wpan-tools
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: img,creator-ci40
 

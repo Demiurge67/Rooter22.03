@@ -41,7 +41,7 @@ Target-Profile-Description:
 
 Target-Profile: DEVICE_wd_mbwe
 Target-Profile-Name: Western Digital My Book World Edition
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: wd,mbwe
 
@@ -79,7 +79,7 @@ Target-Profile-Description:
 
 Target-Profile: DEVICE_akitio_mycloud
 Target-Profile-Name: Akitio MyCloud Mini
-Target-Profile-Packages: kmod-ata-oxnas-sata kmod-i2c-gpio kmod-rtc-ds1307 kmod-usb2-oxnas kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: kmod-ata-oxnas-sata kmod-i2c-gpio kmod-rtc-ds1307 kmod-usb2-oxnas kmod-usb-ledtrig-usbport
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: akitio,mycloud akitio
 
@@ -107,7 +107,7 @@ Build firmware images for Cloud Engines PogoPlug Pro (with mPCIe)
 
 Target-Profile: DEVICE_cloudengines_pogoplug-series-3
 Target-Profile-Name: Cloud Engines PogoPlug Series V3 (without mPCIe)
-Target-Profile-Packages: kmod-usb2-oxnas kmod-usb-ledtrig-usbport kmod-ata-oxnas-sata 
+Target-Profile-Packages: kmod-usb2-oxnas kmod-usb-ledtrig-usbport kmod-ata-oxnas-sata
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: cloudengines,pogoplug-series-3 cloudengines,pogoplugv3 pogoplug-v3
 
@@ -121,7 +121,7 @@ Build firmware images for Cloud Engines PogoPlug Series V3 (without mPCIe)
 
 Target-Profile: DEVICE_shuttle_kd20
 Target-Profile-Name: Shuttle KD20
-Target-Profile-Packages: kmod-usb2-oxnas kmod-usb3 kmod-usb-ledtrig-usbport kmod-i2c-gpio kmod-rtc-pcf8563 kmod-gpio-beeper kmod-hwmon-drivetemp kmod-hwmon-gpiofan kmod-ata-oxnas-sata kmod-md-mod kmod-md-raid0 kmod-md-raid1 kmod-fs-ext4 kmod-fs-xfs 
+Target-Profile-Packages: kmod-usb2-oxnas kmod-usb3 kmod-usb-ledtrig-usbport kmod-i2c-gpio kmod-rtc-pcf8563 kmod-gpio-beeper kmod-hwmon-drivetemp kmod-hwmon-gpiofan kmod-ata-oxnas-sata kmod-md-mod kmod-md-raid0 kmod-md-raid1 kmod-fs-ext4 kmod-fs-xfs
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: shuttle,kd20 kd20
 
@@ -135,7 +135,7 @@ Build firmware images for Shuttle KD20
 
 Target-Profile: DEVICE_mitrastar_stg-212
 Target-Profile-Name: MitraStar STG-212
-Target-Profile-Packages: kmod-ata-oxnas-sata kmod-fs-ext4 kmod-fs-xfs kmod-usb2-oxnas kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: kmod-ata-oxnas-sata kmod-fs-ext4 kmod-fs-xfs kmod-usb2-oxnas kmod-usb-ledtrig-usbport
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: mitrastar,stg-212 stg212
 

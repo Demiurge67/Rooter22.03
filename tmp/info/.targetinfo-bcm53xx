@@ -67,7 +67,7 @@ Build firmware images for ASUS RT-AC56U
 
 Target-Profile: DEVICE_asus_rt-ac68u
 Target-Profile-Name: ASUS RT-AC68U
-Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3 
+Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: asus,rt-ac68u
 
@@ -81,7 +81,7 @@ Build firmware images for ASUS RT-AC68U
 
 Target-Profile: DEVICE_asus_rt-ac87u
 Target-Profile-Name: ASUS RT-AC87U
-Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3 
+Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: asus,rt-ac87u
 
@@ -109,7 +109,7 @@ Build firmware images for ASUS RT-AC88U
 
 Target-Profile: DEVICE_asus_rt-n18u
 Target-Profile-Name: ASUS RT-N18U
-Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3 
+Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: asus,rt-n18u
 
@@ -123,7 +123,7 @@ Build firmware images for ASUS RT-N18U
 
 Target-Profile: DEVICE_buffalo_wxr-1900dhp
 Target-Profile-Name: Buffalo WXR-1900DHP
-Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3 
+Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: buffalo,wxr-1900dhp
 
@@ -249,7 +249,7 @@ Build firmware images for Linksys EA9500
 
 Target-Profile: DEVICE_luxul_abr-4500
 Target-Profile-Name: Luxul ABR-4500
-Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3 
+Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: luxul,abr-4500
 
@@ -277,7 +277,7 @@ Build firmware images for Luxul XAP-1610
 
 Target-Profile: DEVICE_luxul_xbr-4500
 Target-Profile-Name: Luxul XBR-4500
-Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3 
+Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: luxul,xbr-4500
 
@@ -347,7 +347,7 @@ Build firmware images for NETGEAR R6300 v2
 
 Target-Profile: DEVICE_netgear_r7000
 Target-Profile-Name: NETGEAR R7000
-Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3 
+Target-Profile-Packages: kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: netgear,r7000
 

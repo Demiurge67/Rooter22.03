@@ -34,7 +34,7 @@ Target-Description:
 Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-wolfssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe uboot-envtools partx-utils e2fsprogs mkf2fs kmod-gpio-button-hotplug 
 Target-Profile: DEVICE_friendlyarm_nanopi-r2s
 Target-Profile-Name: FriendlyARM NanoPi R2S
-Target-Profile-Packages: kmod-usb-net-rtl8152 
+Target-Profile-Packages: kmod-usb-net-rtl8152
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: friendlyarm,nanopi-r2s
 
@@ -48,7 +48,7 @@ Build firmware images for FriendlyARM NanoPi R2S
 
 Target-Profile: DEVICE_friendlyarm_nanopi-r4s
 Target-Profile-Name: FriendlyARM NanoPi R4S 4GB LPDDR4
-Target-Profile-Packages: kmod-r8169 
+Target-Profile-Packages: kmod-r8169
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: friendlyarm,nanopi-r4s
 
@@ -62,7 +62,7 @@ Build firmware images for FriendlyARM NanoPi R4S 4GB LPDDR4
 
 Target-Profile: DEVICE_pine64_rockpro64
 Target-Profile-Name: Pine64 RockPro64
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: pine64,rockpro64
 
@@ -76,7 +76,7 @@ Build firmware images for Pine64 RockPro64
 
 Target-Profile: DEVICE_radxa_rock-pi-4a
 Target-Profile-Name: Radxa ROCK Pi 4A
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: radxa,rockpi4a radxa,rockpi4
 

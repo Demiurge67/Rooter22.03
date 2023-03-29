@@ -203,7 +203,7 @@ Package: wpad-mesh-openssl
 Submenu: WirelessAPD
 Version: 2022-01-16-cff80b4f7d3c0a47c052e8187d671710f48939e4-0.2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus @PACKAGE_kmod-cfg80211 @(!TARGET_uml||BROKEN) +libopenssl
-Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-mini hostapd-openssl hostapd-wolfssl wpad  wpad
+Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-mini hostapd-openssl hostapd-wolfssl wpad wpad
 Menu-Depends: 
 Provides: hostapd wpa-supplicant wpa-supplicant-mesh wpad-mesh
 Build-Variant: wpad-mesh-openssl
@@ -225,7 +225,7 @@ Package: wpad-mesh-wolfssl
 Submenu: WirelessAPD
 Version: 2022-01-16-cff80b4f7d3c0a47c052e8187d671710f48939e4-0.2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus @PACKAGE_kmod-cfg80211 @(!TARGET_uml||BROKEN) +libwolfssl
-Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-mini hostapd-openssl hostapd-wolfssl wpad wpad-mesh-openssl  wpad wpad-mesh-openssl
+Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-mini hostapd-openssl hostapd-wolfssl wpad wpad-mesh-openssl wpad wpad-mesh-openssl
 Menu-Depends: 
 Provides: hostapd wpa-supplicant wpa-supplicant-mesh wpad-mesh
 Build-Variant: wpad-mesh-wolfssl
@@ -247,7 +247,7 @@ Package: wpad-basic
 Submenu: WirelessAPD
 Version: 2022-01-16-cff80b4f7d3c0a47c052e8187d671710f48939e4-0.2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus
-Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-mini hostapd-openssl hostapd-wolfssl wpad wpad-mesh-openssl wpad-mesh-wolfssl  wpad wpad-mesh-openssl wpad-mesh-wolfssl
+Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-mini hostapd-openssl hostapd-wolfssl wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad wpad-mesh-openssl wpad-mesh-wolfssl
 Menu-Depends: 
 Provides: hostapd wpa-supplicant
 Build-Variant: wpad-basic
@@ -269,7 +269,7 @@ Package: wpad-basic-openssl
 Submenu: WirelessAPD
 Version: 2022-01-16-cff80b4f7d3c0a47c052e8187d671710f48939e4-0.2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus +libopenssl
-Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-mini hostapd-openssl hostapd-wolfssl wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic  wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic
+Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-mini hostapd-openssl hostapd-wolfssl wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic
 Menu-Depends: 
 Provides: hostapd wpa-supplicant
 Build-Variant: wpad-basic-openssl
@@ -291,7 +291,7 @@ Package: wpad-basic-wolfssl
 Submenu: WirelessAPD
 Version: 2022-01-16-cff80b4f7d3c0a47c052e8187d671710f48939e4-0.2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus +libwolfssl
-Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-mini hostapd-openssl hostapd-wolfssl wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic wpad-basic-openssl  wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic wpad-basic-openssl
+Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-mini hostapd-openssl hostapd-wolfssl wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic wpad-basic-openssl wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic wpad-basic-openssl
 Menu-Depends: 
 Provides: hostapd wpa-supplicant
 Build-Variant: wpad-basic-wolfssl
@@ -313,7 +313,7 @@ Package: wpad-mini
 Submenu: WirelessAPD
 Version: 2022-01-16-cff80b4f7d3c0a47c052e8187d671710f48939e4-0.2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus
-Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-mini hostapd-openssl hostapd-wolfssl wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic wpad-basic-openssl wpad-basic-wolfssl  wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic wpad-basic-openssl wpad-basic-wolfssl
+Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-mini hostapd-openssl hostapd-wolfssl wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic wpad-basic-openssl wpad-basic-wolfssl wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic wpad-basic-openssl wpad-basic-wolfssl
 Menu-Depends: 
 Provides: hostapd wpa-supplicant
 Build-Variant: wpad-mini
@@ -335,7 +335,7 @@ Package: wpad-openssl
 Submenu: WirelessAPD
 Version: 2022-01-16-cff80b4f7d3c0a47c052e8187d671710f48939e4-0.2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus +libopenssl
-Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-mini hostapd-openssl hostapd-wolfssl wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic wpad-basic-openssl wpad-basic-wolfssl wpad-mini  wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic wpad-basic-openssl wpad-basic-wolfssl wpad-mini
+Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-mini hostapd-openssl hostapd-wolfssl wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic wpad-basic-openssl wpad-basic-wolfssl wpad-mini wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic wpad-basic-openssl wpad-basic-wolfssl wpad-mini
 Menu-Depends: 
 Provides: hostapd wpa-supplicant
 Build-Variant: wpad-full-openssl
@@ -358,7 +358,7 @@ Package: wpad-wolfssl
 Submenu: WirelessAPD
 Version: 2022-01-16-cff80b4f7d3c0a47c052e8187d671710f48939e4-0.2
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus +libwolfssl
-Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-mini hostapd-openssl hostapd-wolfssl wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic wpad-basic-openssl wpad-basic-wolfssl wpad-mini wpad-openssl  wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic wpad-basic-openssl wpad-basic-wolfssl wpad-mini wpad-openssl
+Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-mini hostapd-openssl hostapd-wolfssl wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic wpad-basic-openssl wpad-basic-wolfssl wpad-mini wpad-openssl wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-basic wpad-basic-openssl wpad-basic-wolfssl wpad-mini wpad-openssl
 Menu-Depends: 
 Provides: hostapd wpa-supplicant
 Build-Variant: wpad-full-wolfssl

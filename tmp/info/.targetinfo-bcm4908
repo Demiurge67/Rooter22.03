@@ -33,7 +33,7 @@ Target-Description:
 Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-wolfssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe bcm4908img fdt-utils uboot-envtools kmod-gpio-button-hotplug kmod-usb-ohci kmod-usb2 kmod-usb3 
 Target-Profile: DEVICE_asus_gt-ac5300
 Target-Profile-Name: Asus GT-AC5300
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: asus,gt-ac5300
 
@@ -47,7 +47,7 @@ Build firmware images for Asus GT-AC5300
 
 Target-Profile: DEVICE_netgear_r8000p
 Target-Profile-Name: Netgear R8000P
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: netgear,r8000p
 
@@ -61,7 +61,7 @@ Build firmware images for Netgear R8000P
 
 Target-Profile: DEVICE_tplink_archer-c2300-v1
 Target-Profile-Name: TP-Link Archer C2300 v1
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: tplink,archer-c2300-v1
 Target-Profile-Broken: y

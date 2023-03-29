@@ -35,7 +35,7 @@ Target-Description:
 Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-wolfssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe partx-utils mkf2fs e2fsprogs kmod-button-hotplug 
 Target-Profile: DEVICE_generic
 Target-Profile-Name: Generic x86
-Target-Profile-Packages:  kmod-3c59x kmod-8139too kmod-e100 kmod-e1000 kmod-natsemi kmod-ne2k-pci kmod-pcnet32 kmod-r8169 kmod-sis900 kmod-tg3 kmod-via-rhine kmod-via-velocity kmod-forcedeth kmod-fs-vfat 
+Target-Profile-Packages: kmod-3c59x kmod-8139too kmod-e100 kmod-e1000 kmod-natsemi kmod-ne2k-pci kmod-pcnet32 kmod-r8169 kmod-sis900 kmod-tg3 kmod-via-rhine kmod-via-velocity kmod-forcedeth kmod-fs-vfat
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: 
 
@@ -66,7 +66,7 @@ Target-Description:
 Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-wolfssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe partx-utils mkf2fs e2fsprogs kmod-button-hotplug 
 Target-Profile: DEVICE_generic
 Target-Profile-Name: Generic x86/legacy
-Target-Profile-Packages:  kmod-3c59x kmod-8139too kmod-e100 kmod-e1000 kmod-natsemi kmod-ne2k-pci kmod-pcnet32 kmod-r8169 kmod-sis900 kmod-tg3 kmod-via-rhine kmod-via-velocity kmod-forcedeth 
+Target-Profile-Packages: kmod-3c59x kmod-8139too kmod-e100 kmod-e1000 kmod-natsemi kmod-ne2k-pci kmod-pcnet32 kmod-r8169 kmod-sis900 kmod-tg3 kmod-via-rhine kmod-via-velocity kmod-forcedeth
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: 
 
@@ -96,7 +96,7 @@ Target-Description:
 Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-wolfssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe partx-utils mkf2fs e2fsprogs kmod-button-hotplug 
 Target-Profile: DEVICE_generic
 Target-Profile-Name: Generic x86/Geode
-Target-Profile-Packages:  kmod-crypto-cbc kmod-crypto-ecb kmod-crypto-hw-geode kmod-ledtrig-gpio 
+Target-Profile-Packages: kmod-crypto-cbc kmod-crypto-ecb kmod-crypto-hw-geode kmod-ledtrig-gpio
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: 
 
@@ -110,7 +110,7 @@ Build firmware images for Generic x86/Geode
 
 Target-Profile: DEVICE_geos
 Target-Profile-Name: Traverse Technologies Geos
-Target-Profile-Packages:  kmod-crypto-cbc kmod-crypto-ecb kmod-crypto-hw-geode kmod-ledtrig-gpio br2684ctl flashrom kmod-hwmon-lm90 kmod-mppe kmod-pppoa kmod-usb-ohci-pci linux-atm ppp-mod-pppoa pppdump pppstats soloscli tc 
+Target-Profile-Packages: kmod-crypto-cbc kmod-crypto-ecb kmod-crypto-hw-geode kmod-ledtrig-gpio br2684ctl flashrom kmod-hwmon-lm90 kmod-mppe kmod-pppoa kmod-usb-ohci-pci linux-atm ppp-mod-pppoa pppdump pppstats soloscli tc
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: 
 
@@ -140,7 +140,7 @@ Target-Description:
 Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-wolfssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe partx-utils mkf2fs e2fsprogs kmod-button-hotplug 
 Target-Profile: DEVICE_generic
 Target-Profile-Name: Generic x86/64
-Target-Profile-Packages:  kmod-amazon-ena kmod-amd-xgbe kmod-bnx2 kmod-e1000e kmod-e1000 kmod-forcedeth kmod-fs-vfat kmod-igb kmod-igc kmod-ixgbe kmod-r8169 kmod-tg3 
+Target-Profile-Packages: kmod-amazon-ena kmod-amd-xgbe kmod-bnx2 kmod-e1000e kmod-e1000 kmod-forcedeth kmod-fs-vfat kmod-igb kmod-igc kmod-ixgbe kmod-r8169 kmod-tg3
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: 
 

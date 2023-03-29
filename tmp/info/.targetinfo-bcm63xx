@@ -51,7 +51,7 @@ Target-Profile-Description:
 
 Target-Profile: DEVICE_brcm_bcm963281tan
 Target-Profile-Name: Generic 963281TAN
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: brcm,bcm963281tan
 
@@ -65,7 +65,7 @@ Build firmware images for Generic 963281TAN
 
 Target-Profile: DEVICE_brcm_bcm96328avng
 Target-Profile-Name: Generic 96328avng
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: brcm,bcm96328avng
 
@@ -79,7 +79,7 @@ Build firmware images for Generic 96328avng
 
 Target-Profile: DEVICE_brcm_bcm96338gw
 Target-Profile-Name: Generic 96338GW
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: brcm,bcm96338gw
 
@@ -93,7 +93,7 @@ Build firmware images for Generic 96338GW
 
 Target-Profile: DEVICE_brcm_bcm96338w
 Target-Profile-Name: Generic 96338W
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: brcm,bcm96338w
 
@@ -107,7 +107,7 @@ Build firmware images for Generic 96338W
 
 Target-Profile: DEVICE_brcm_bcm96345gw2
 Target-Profile-Name: Generic 96345GW2
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: brcm,bcm96345gw2
 
@@ -121,7 +121,7 @@ Build firmware images for Generic 96345GW2
 
 Target-Profile: DEVICE_brcm_bcm96348gw
 Target-Profile-Name: Generic 96348GW
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: brcm,bcm96348gw
 
@@ -135,7 +135,7 @@ Build firmware images for Generic 96348GW
 
 Target-Profile: DEVICE_brcm_bcm96348gw-10
 Target-Profile-Name: Generic 96348GW-10
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: brcm,bcm96348gw-10
 
@@ -149,7 +149,7 @@ Build firmware images for Generic 96348GW-10
 
 Target-Profile: DEVICE_brcm_bcm96348gw-11
 Target-Profile-Name: Generic 96348GW-11
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: brcm,bcm96348gw-11
 
@@ -163,7 +163,7 @@ Build firmware images for Generic 96348GW-11
 
 Target-Profile: DEVICE_brcm_bcm96348r
 Target-Profile-Name: Generic 96348R
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: brcm,bcm96348r
 
@@ -177,7 +177,7 @@ Build firmware images for Generic 96348R
 
 Target-Profile: DEVICE_brcm_bcm96358vw
 Target-Profile-Name: Generic 96358VW
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: brcm,bcm96358vw
 
@@ -191,7 +191,7 @@ Build firmware images for Generic 96358VW
 
 Target-Profile: DEVICE_brcm_bcm96358vw2
 Target-Profile-Name: Generic 96358VW2
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: brcm,bcm96358vw2
 
@@ -205,7 +205,7 @@ Build firmware images for Generic 96358VW2
 
 Target-Profile: DEVICE_brcm_bcm96368mvngr
 Target-Profile-Name: Generic 96368MVNgr
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: brcm,bcm96368mvngr
 
@@ -219,7 +219,7 @@ Build firmware images for Generic 96368MVNgr
 
 Target-Profile: DEVICE_brcm_bcm96368mvwg
 Target-Profile-Name: Generic 96368MVWG
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: brcm,bcm96368mvwg
 
@@ -387,7 +387,7 @@ Build firmware images for Broadcom BCM96318REF_P300 reference board
 
 Target-Profile: DEVICE_brcm_bcm963268bu-p300
 Target-Profile-Name: Broadcom BCM963268BU_P300 reference board
-Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-bcm63xx-udc 
+Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-bcm63xx-udc
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: brcm,bcm963268bu-p300
 
@@ -401,7 +401,7 @@ Build firmware images for Broadcom BCM963268BU_P300 reference board
 
 Target-Profile: DEVICE_brcm_bcm963269bhr
 Target-Profile-Name: Broadcom BCM963269BHR reference board
-Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-bcm63xx-udc 
+Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-bcm63xx-udc
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: brcm,bcm963269bhr
 
@@ -891,7 +891,7 @@ Build firmware images for Dynalink RTA1025W
 
 Target-Profile: DEVICE_dynalink_rta1320
 Target-Profile-Name: Dynalink RTA1320
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: dynalink,rta1320
 
@@ -1017,7 +1017,7 @@ Build firmware images for Innacomm W3400V6
 
 Target-Profile: DEVICE_inteno_vg50
 Target-Profile-Name: Inteno VG50 Multi-WAN CPE
-Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: inteno,vg50
 
@@ -1045,7 +1045,7 @@ Build firmware images for Inventel Livebox 1
 
 Target-Profile: DEVICE_netgear_cvg834g
 Target-Profile-Name: NETGEAR CVG834G
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: netgear,cvg834g
 
@@ -1187,7 +1187,7 @@ Build firmware images for Pirelli A226G
 
 Target-Profile: DEVICE_pirelli_a226m
 Target-Profile-Name: Pirelli A226M
-Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: pirelli,a226m
 
@@ -1201,7 +1201,7 @@ Build firmware images for Pirelli A226M
 
 Target-Profile: DEVICE_pirelli_a226m-fwb
 Target-Profile-Name: Pirelli A226M-FWB
-Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: pirelli,a226m-fwb
 
@@ -1341,7 +1341,7 @@ Build firmware images for SFR Neufbox 4 Foxconn
 
 Target-Profile: DEVICE_sfr_neufbox-6-sercomm-r0
 Target-Profile-Name: SFR Neufbox 6
-Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: sfr,neufbox-6-sercomm-r0
 
@@ -1355,7 +1355,7 @@ Build firmware images for SFR Neufbox 6
 
 Target-Profile: DEVICE_sky_sr102
 Target-Profile-Name: SKY SR102
-Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: sky,sr102
 
@@ -1467,7 +1467,7 @@ Build firmware images for Telsey CPVA502+
 
 Target-Profile: DEVICE_telsey_cpva642
 Target-Profile-Name: Telsey CPVA642-type (CPA-ZNTE60T)
-Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: telsey,cpva642
 
@@ -1481,7 +1481,7 @@ Build firmware images for Telsey CPVA642-type (CPA-ZNTE60T)
 
 Target-Profile: DEVICE_telsey_magic
 Target-Profile-Name: Telsey MAGIC (Alice W-Gate)
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: telsey,magic
 
@@ -1496,7 +1496,7 @@ Alternative device titles:
 
 Target-Profile: DEVICE_telsey_magic
 Target-Profile-Name: Alice W-Gate
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: telsey,magic
 
@@ -1588,7 +1588,7 @@ Target-Profile-Description:
 
 Target-Profile: DEVICE_brcm_bcm963281tan
 Target-Profile-Name: Generic 963281TAN
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: brcm,bcm963281tan
 
@@ -1602,7 +1602,7 @@ Build firmware images for Generic 963281TAN
 
 Target-Profile: DEVICE_brcm_bcm96328avng
 Target-Profile-Name: Generic 96328avng
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: brcm,bcm96328avng
 
@@ -1616,7 +1616,7 @@ Build firmware images for Generic 96328avng
 
 Target-Profile: DEVICE_brcm_bcm96338gw
 Target-Profile-Name: Generic 96338GW
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: brcm,bcm96338gw
 
@@ -1630,7 +1630,7 @@ Build firmware images for Generic 96338GW
 
 Target-Profile: DEVICE_brcm_bcm96338w
 Target-Profile-Name: Generic 96338W
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: brcm,bcm96338w
 
@@ -1644,7 +1644,7 @@ Build firmware images for Generic 96338W
 
 Target-Profile: DEVICE_brcm_bcm96345gw2
 Target-Profile-Name: Generic 96345GW2
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: brcm,bcm96345gw2
 
@@ -1658,7 +1658,7 @@ Build firmware images for Generic 96345GW2
 
 Target-Profile: DEVICE_brcm_bcm96348gw
 Target-Profile-Name: Generic 96348GW
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: brcm,bcm96348gw
 
@@ -1672,7 +1672,7 @@ Build firmware images for Generic 96348GW
 
 Target-Profile: DEVICE_brcm_bcm96348gw-10
 Target-Profile-Name: Generic 96348GW-10
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: brcm,bcm96348gw-10
 
@@ -1686,7 +1686,7 @@ Build firmware images for Generic 96348GW-10
 
 Target-Profile: DEVICE_brcm_bcm96348gw-11
 Target-Profile-Name: Generic 96348GW-11
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: brcm,bcm96348gw-11
 
@@ -1700,7 +1700,7 @@ Build firmware images for Generic 96348GW-11
 
 Target-Profile: DEVICE_brcm_bcm96348r
 Target-Profile-Name: Generic 96348R
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: brcm,bcm96348r
 
@@ -1714,7 +1714,7 @@ Build firmware images for Generic 96348R
 
 Target-Profile: DEVICE_brcm_bcm96358vw
 Target-Profile-Name: Generic 96358VW
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: brcm,bcm96358vw
 
@@ -1728,7 +1728,7 @@ Build firmware images for Generic 96358VW
 
 Target-Profile: DEVICE_brcm_bcm96358vw2
 Target-Profile-Name: Generic 96358VW2
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: brcm,bcm96358vw2
 
@@ -1742,7 +1742,7 @@ Build firmware images for Generic 96358VW2
 
 Target-Profile: DEVICE_brcm_bcm96368mvngr
 Target-Profile-Name: Generic 96368MVNgr
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: brcm,bcm96368mvngr
 
@@ -1756,7 +1756,7 @@ Build firmware images for Generic 96368MVNgr
 
 Target-Profile: DEVICE_brcm_bcm96368mvwg
 Target-Profile-Name: Generic 96368MVWG
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: brcm,bcm96368mvwg
 
@@ -1924,7 +1924,7 @@ Build firmware images for Broadcom BCM96318REF_P300 reference board
 
 Target-Profile: DEVICE_brcm_bcm963268bu-p300
 Target-Profile-Name: Broadcom BCM963268BU_P300 reference board
-Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-bcm63xx-udc 
+Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-bcm63xx-udc
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: brcm,bcm963268bu-p300
 
@@ -1938,7 +1938,7 @@ Build firmware images for Broadcom BCM963268BU_P300 reference board
 
 Target-Profile: DEVICE_brcm_bcm963269bhr
 Target-Profile-Name: Broadcom BCM963269BHR reference board
-Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-bcm63xx-udc 
+Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-bcm63xx-udc
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: brcm,bcm963269bhr
 
@@ -2428,7 +2428,7 @@ Build firmware images for Dynalink RTA1025W
 
 Target-Profile: DEVICE_dynalink_rta1320
 Target-Profile-Name: Dynalink RTA1320
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: dynalink,rta1320
 
@@ -2554,7 +2554,7 @@ Build firmware images for Innacomm W3400V6
 
 Target-Profile: DEVICE_inteno_vg50
 Target-Profile-Name: Inteno VG50 Multi-WAN CPE
-Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: inteno,vg50
 
@@ -2582,7 +2582,7 @@ Build firmware images for Inventel Livebox 1
 
 Target-Profile: DEVICE_netgear_cvg834g
 Target-Profile-Name: NETGEAR CVG834G
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: netgear,cvg834g
 
@@ -2724,7 +2724,7 @@ Build firmware images for Pirelli A226G
 
 Target-Profile: DEVICE_pirelli_a226m
 Target-Profile-Name: Pirelli A226M
-Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: pirelli,a226m
 
@@ -2738,7 +2738,7 @@ Build firmware images for Pirelli A226M
 
 Target-Profile: DEVICE_pirelli_a226m-fwb
 Target-Profile-Name: Pirelli A226M-FWB
-Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: pirelli,a226m-fwb
 
@@ -2878,7 +2878,7 @@ Build firmware images for SFR Neufbox 4 Foxconn
 
 Target-Profile: DEVICE_sfr_neufbox-6-sercomm-r0
 Target-Profile-Name: SFR Neufbox 6
-Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: sfr,neufbox-6-sercomm-r0
 
@@ -2892,7 +2892,7 @@ Build firmware images for SFR Neufbox 6
 
 Target-Profile: DEVICE_sky_sr102
 Target-Profile-Name: SKY SR102
-Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: sky,sr102
 
@@ -3004,7 +3004,7 @@ Build firmware images for Telsey CPVA502+
 
 Target-Profile: DEVICE_telsey_cpva642
 Target-Profile-Name: Telsey CPVA642-type (CPA-ZNTE60T)
-Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: telsey,cpva642
 
@@ -3018,7 +3018,7 @@ Build firmware images for Telsey CPVA642-type (CPA-ZNTE60T)
 
 Target-Profile: DEVICE_telsey_magic
 Target-Profile-Name: Telsey MAGIC (Alice W-Gate)
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: telsey,magic
 
@@ -3033,7 +3033,7 @@ Alternative device titles:
 
 Target-Profile: DEVICE_telsey_magic
 Target-Profile-Name: Alice W-Gate
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: telsey,magic
 
@@ -3090,7 +3090,7 @@ Build firmware images for ZyXEL P870HW-51a v2
 
 Target-Profile: DEVICE_comtrend_vg-8050
 Target-Profile-Name: Comtrend VG-8050
-Target-Profile-Packages:  nand-utils kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: nand-utils kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: comtrend,vg-8050
 
@@ -3104,7 +3104,7 @@ Build firmware images for Comtrend VG-8050
 
 Target-Profile: DEVICE_comtrend_vr-3032u
 Target-Profile-Name: Comtrend VR-3032u
-Target-Profile-Packages:  nand-utils kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: nand-utils kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: comtrend,vr-3032u
 
@@ -3118,7 +3118,7 @@ Build firmware images for Comtrend VR-3032u
 
 Target-Profile: DEVICE_huawei_hg253s-v2
 Target-Profile-Name: Huawei HG253s v2
-Target-Profile-Packages:  nand-utils kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: nand-utils kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: huawei,hg253s-v2
 
@@ -3132,7 +3132,7 @@ Build firmware images for Huawei HG253s v2
 
 Target-Profile: DEVICE_netgear_dgnd3700-v2
 Target-Profile-Name: NETGEAR DGND3700 v2
-Target-Profile-Packages:  nand-utils kmod-b43 wpad-basic-wolfssl kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport iwinfo
+Target-Profile-Packages: nand-utils kmod-b43 wpad-basic-wolfssl kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: netgear,dgnd3700-v2
 
@@ -3146,7 +3146,7 @@ Build firmware images for NETGEAR DGND3700 v2
 
 Target-Profile: DEVICE_sercomm_ad1018
 Target-Profile-Name: Sercomm AD1018
-Target-Profile-Packages:  nand-utils kmod-b43 wpad-basic-wolfssl kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport iwinfo
+Target-Profile-Packages: nand-utils kmod-b43 wpad-basic-wolfssl kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: sercomm,ad1018
 
@@ -3160,7 +3160,7 @@ Build firmware images for Sercomm AD1018
 
 Target-Profile: DEVICE_sercomm_h500-s-lowi
 Target-Profile-Name: Sercomm H500-s lowi
-Target-Profile-Packages:  nand-utils kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: nand-utils kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: sercomm,h500-s-lowi
 
@@ -3174,7 +3174,7 @@ Build firmware images for Sercomm H500-s lowi
 
 Target-Profile: DEVICE_sercomm_h500-s-vfes
 Target-Profile-Name: Sercomm H500-s vfes
-Target-Profile-Packages:  nand-utils kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: nand-utils kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: sercomm,h500-s-vfes
 

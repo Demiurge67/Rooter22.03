@@ -15,7 +15,7 @@ define Package/ext-rooter-lite-mesh
   CATEGORY:=ROOter
   DEPENDS:=+luci +ext-rooter-basic \
 		+luci-app-ddns +ddns-scripts \
-		+luci-app-openvpn +ext-wireguard \
+		+ext-wireguard \
 		+bwmon +464xlat +webconsole \
 		+ext-theme +luci-theme-materialgrey +ext-login \
 		+ca-bundle +ca-certificates +libustream-wolfssl \

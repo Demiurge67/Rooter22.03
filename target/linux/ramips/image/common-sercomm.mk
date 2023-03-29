@@ -181,7 +181,7 @@ define Device/sercomm_cxx
   SERCOMM_ROOTFS_OFFSET := 0x1000000
   SERCOMM_KERNEL2_OFFSET := 0xa00100
   SERCOMM_ROOTFS2_OFFSET := 0x3000000
-  IMAGE/factory.img := append-ubi | check-size | sercomm-factory-cqr
+  IMAGE/factory.img := append-ubi | sercomm-factory-cqr
 endef
 
 define Device/sercomm_dxx
@@ -191,7 +191,7 @@ define Device/sercomm_dxx
   LZMA_TEXT_START := 0x82800000
   SERCOMM_KERNEL_OFFSET := 0x400100
   SERCOMM_ROOTFS_OFFSET := 0x1000000
-  IMAGE/factory.img := append-ubi | check-size | sercomm-part-tag rootfs | \
+  IMAGE/factory.img := append-ubi | sercomm-part-tag rootfs | \
 	sercomm-prepend-tagged-kernel kernel | gzip | sercomm-payload | \
 	sercomm-crypto
 endef

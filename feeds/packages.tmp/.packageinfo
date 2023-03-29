@@ -55558,7 +55558,7 @@ Christian Beier <cb@shoutrlabs.com>
 Source-Makefile: feeds/packages/net/banip/Makefile
 
 Package: banip
-Version: 0.8.2-2
+Version: 0.8.2-4
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +jshn +jsonfilter +firewall4 +ca-bundle +logd +rpcd +rpcd-mod-rpcsys
 Conflicts: 
 Menu-Depends: 
@@ -57610,7 +57610,7 @@ Build-Depends: golang/host
 
 Package: dnsproxy
 Submenu: IP Addresses and Names
-Version: 0.47.0-1
+Version: 0.48.2-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -57621,7 +57621,7 @@ Repository: base
 Title: Simple DNS proxy with DoH, DoT, DoQ and DNSCrypt support
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Require-User: dnsproxy=411:dnsproxy=411
-Source: dnsproxy-0.47.0.tar.gz
+Source: dnsproxy-0.48.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -65095,7 +65095,7 @@ Florian Eckert <fe@dev.tdt.de>
 Source-Makefile: feeds/packages/net/natmap/Makefile
 
 Package: natmap
-Version: 20221225-1
+Version: 20230322-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
 Menu-Depends: 
@@ -65105,7 +65105,7 @@ Category: Network
 Repository: base
 Title: TCP/UDP port mapping tool for full cone NAT
 Maintainer: Richard Yu <yurichard3839@gmail.com>
-Source: natmap-20221225.tar.gz
+Source: natmap-20230322.tar.gz
 License: MIT
 LicenseFiles: License
 Type: ipkg
@@ -105498,7 +105498,7 @@ Source-Makefile: feeds/packages/utils/yq/Makefile
 Build-Depends: golang/host
 
 Package: yq
-Version: 4.32.2-1
+Version: 4.33.1-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -105508,7 +105508,7 @@ Category: Utilities
 Repository: base
 Title: Portable command-line YAML processor
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: yq-4.32.2.tar.gz
+Source: yq-4.33.1.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg

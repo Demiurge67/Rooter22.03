@@ -1,60 +1,10 @@
 Source-Makefile: package/firmware/ipq-wifi/Makefile
 
-Package: ipq-wifi-8dev_habanero-dvk
-Submenu: ath10k Board-Specific Overrides
-Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Title: board-2.bin Overrides for 8devices Habanero DVK
-Maintainer: 
-Source: 
-Type: ipkg
-Description: The 8devices Habanero DVK requires board-specific, reference ("cal") data
-that is not yet present in the upstream wireless firmware distribution.
-
-This package supplies board-2.bin file(s) that, in the interim,
-overwrite those supplied by the ath10k-firmware-* packages.
-
-This is package is only necessary for the 8devices Habanero DVK.
-
-Do not install it for any other device!
-
-@@
-
-Package: ipq-wifi-aruba_ap-303
-Submenu: ath10k Board-Specific Overrides
-Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Title: board-2.bin Overrides for Aruba AP-303
-Maintainer: 
-Source: 
-Type: ipkg
-Description: The Aruba AP-303 requires board-specific, reference ("cal") data
-that is not yet present in the upstream wireless firmware distribution.
-
-This package supplies board-2.bin file(s) that, in the interim,
-overwrite those supplied by the ath10k-firmware-* packages.
-
-This is package is only necessary for the Aruba AP-303.
-
-Do not install it for any other device!
-
-@@
-
 Package: ipq-wifi-aruba_ap-365
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x||TARGET_ipq60xx)
+Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: firmware
@@ -75,111 +25,11 @@ Do not install it for any other device!
 
 @@
 
-Package: ipq-wifi-asus_rt-ac42u
-Submenu: ath10k Board-Specific Overrides
-Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-aruba_ap-365
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Title: board-2.bin Overrides for ASUS RT-AC42U
-Maintainer: 
-Source: 
-Type: ipkg
-Description: The ASUS RT-AC42U requires board-specific, reference ("cal") data
-that is not yet present in the upstream wireless firmware distribution.
-
-This package supplies board-2.bin file(s) that, in the interim,
-overwrite those supplied by the ath10k-firmware-* packages.
-
-This is package is only necessary for the ASUS RT-AC42U.
-
-Do not install it for any other device!
-
-@@
-
-Package: ipq-wifi-avm_fritzrepeater-1200
-Submenu: ath10k Board-Specific Overrides
-Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-aruba_ap-365 ipq-wifi-asus_rt-ac42u
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Title: board-2.bin Overrides for AVM FRITZRepeater 1200
-Maintainer: 
-Source: 
-Type: ipkg
-Description: The AVM FRITZRepeater 1200 requires board-specific, reference ("cal") data
-that is not yet present in the upstream wireless firmware distribution.
-
-This package supplies board-2.bin file(s) that, in the interim,
-overwrite those supplied by the ath10k-firmware-* packages.
-
-This is package is only necessary for the AVM FRITZRepeater 1200.
-
-Do not install it for any other device!
-
-@@
-
-Package: ipq-wifi-buffalo_wtr-m2133hp
-Submenu: ath10k Board-Specific Overrides
-Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-aruba_ap-365 ipq-wifi-asus_rt-ac42u ipq-wifi-avm_fritzrepeater-1200
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Title: board-2.bin Overrides for Buffalo WTR-M2133HP
-Maintainer: 
-Source: 
-Type: ipkg
-Description: The Buffalo WTR-M2133HP requires board-specific, reference ("cal") data
-that is not yet present in the upstream wireless firmware distribution.
-
-This package supplies board-2.bin file(s) that, in the interim,
-overwrite those supplied by the ath10k-firmware-* packages.
-
-This is package is only necessary for the Buffalo WTR-M2133HP.
-
-Do not install it for any other device!
-
-@@
-
-Package: ipq-wifi-cellc_rtl30vw
-Submenu: ath10k Board-Specific Overrides
-Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-aruba_ap-365 ipq-wifi-asus_rt-ac42u ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Title: board-2.bin Overrides for  Cell C RTL30VW
-Maintainer: 
-Source: 
-Type: ipkg
-Description: The  Cell C RTL30VW requires board-specific, reference ("cal") data
-that is not yet present in the upstream wireless firmware distribution.
-
-This package supplies board-2.bin file(s) that, in the interim,
-overwrite those supplied by the ath10k-firmware-* packages.
-
-This is package is only necessary for the  Cell C RTL30VW.
-
-Do not install it for any other device!
-
-@@
-
 Package: ipq-wifi-devolo_magic-2-wifi-next
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-aruba_ap-365 ipq-wifi-asus_rt-ac42u ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x||TARGET_ipq60xx)
+Conflicts: ipq-wifi-aruba_ap-365
 Menu-Depends: 
 Provides: 
 Section: firmware
@@ -200,36 +50,11 @@ Do not install it for any other device!
 
 @@
 
-Package: ipq-wifi-dlink_dap2610
-Submenu: ath10k Board-Specific Overrides
-Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-aruba_ap-365 ipq-wifi-asus_rt-ac42u ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-devolo_magic-2-wifi-next
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Title: board-2.bin Overrides for D-Link DAP-2610
-Maintainer: 
-Source: 
-Type: ipkg
-Description: The D-Link DAP-2610 requires board-specific, reference ("cal") data
-that is not yet present in the upstream wireless firmware distribution.
-
-This package supplies board-2.bin file(s) that, in the interim,
-overwrite those supplied by the ath10k-firmware-* packages.
-
-This is package is only necessary for the D-Link DAP-2610.
-
-Do not install it for any other device!
-
-@@
-
 Package: ipq-wifi-edgecore_ecw5410
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-aruba_ap-365 ipq-wifi-asus_rt-ac42u ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x||TARGET_ipq60xx)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-devolo_magic-2-wifi-next
 Menu-Depends: 
 Provides: 
 Section: firmware
@@ -253,8 +78,8 @@ Do not install it for any other device!
 Package: ipq-wifi-edgecore_oap100
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-aruba_ap-365 ipq-wifi-asus_rt-ac42u ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x||TARGET_ipq60xx)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-edgecore_ecw5410
 Menu-Depends: 
 Provides: 
 Section: firmware
@@ -275,111 +100,11 @@ Do not install it for any other device!
 
 @@
 
-Package: ipq-wifi-engenius_eap2200
-Submenu: ath10k Board-Specific Overrides
-Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-aruba_ap-365 ipq-wifi-asus_rt-ac42u ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Title: board-2.bin Overrides for EnGenius EAP2200
-Maintainer: 
-Source: 
-Type: ipkg
-Description: The EnGenius EAP2200 requires board-specific, reference ("cal") data
-that is not yet present in the upstream wireless firmware distribution.
-
-This package supplies board-2.bin file(s) that, in the interim,
-overwrite those supplied by the ath10k-firmware-* packages.
-
-This is package is only necessary for the EnGenius EAP2200.
-
-Do not install it for any other device!
-
-@@
-
-Package: ipq-wifi-engenius_emd1
-Submenu: ath10k Board-Specific Overrides
-Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-aruba_ap-365 ipq-wifi-asus_rt-ac42u ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Title: board-2.bin Overrides for EnGenius EMD1
-Maintainer: 
-Source: 
-Type: ipkg
-Description: The EnGenius EMD1 requires board-specific, reference ("cal") data
-that is not yet present in the upstream wireless firmware distribution.
-
-This package supplies board-2.bin file(s) that, in the interim,
-overwrite those supplied by the ath10k-firmware-* packages.
-
-This is package is only necessary for the EnGenius EMD1.
-
-Do not install it for any other device!
-
-@@
-
-Package: ipq-wifi-engenius_emr3500
-Submenu: ath10k Board-Specific Overrides
-Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-aruba_ap-365 ipq-wifi-asus_rt-ac42u ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Title: board-2.bin Overrides for EnGenius EMR3500
-Maintainer: 
-Source: 
-Type: ipkg
-Description: The EnGenius EMR3500 requires board-specific, reference ("cal") data
-that is not yet present in the upstream wireless firmware distribution.
-
-This package supplies board-2.bin file(s) that, in the interim,
-overwrite those supplied by the ath10k-firmware-* packages.
-
-This is package is only necessary for the EnGenius EMR3500.
-
-Do not install it for any other device!
-
-@@
-
-Package: ipq-wifi-ezviz_cs-w3-wd1200g-eup
-Submenu: ath10k Board-Specific Overrides
-Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-aruba_ap-365 ipq-wifi-asus_rt-ac42u ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Title: board-2.bin Overrides for EZVIZ CS-W3-WD1200G EUP
-Maintainer: 
-Source: 
-Type: ipkg
-Description: The EZVIZ CS-W3-WD1200G EUP requires board-specific, reference ("cal") data
-that is not yet present in the upstream wireless firmware distribution.
-
-This package supplies board-2.bin file(s) that, in the interim,
-overwrite those supplied by the ath10k-firmware-* packages.
-
-This is package is only necessary for the EZVIZ CS-W3-WD1200G EUP.
-
-Do not install it for any other device!
-
-@@
-
 Package: ipq-wifi-glinet_gl-ap1300
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-aruba_ap-365 ipq-wifi-asus_rt-ac42u ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x||TARGET_ipq60xx)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100
 Menu-Depends: 
 Provides: 
 Section: firmware
@@ -400,26 +125,51 @@ Do not install it for any other device!
 
 @@
 
-Package: ipq-wifi-glinet_gl-b2200
+Package: ipq-wifi-glinet_gl-axt1800
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-aruba_ap-365 ipq-wifi-asus_rt-ac42u ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-ap1300
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x||TARGET_ipq60xx)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-ax1800
 Menu-Depends: 
 Provides: 
 Section: firmware
 Category: Firmware
-Title: board-2.bin Overrides for GL.iNet GL-B2200
+Title: board-2.bin Overrides for GL.iNet GL-AXT1800
 Maintainer: 
 Source: 
 Type: ipkg
-Description: The GL.iNet GL-B2200 requires board-specific, reference ("cal") data
+Description: The GL.iNet GL-AXT1800 requires board-specific, reference ("cal") data
 that is not yet present in the upstream wireless firmware distribution.
 
 This package supplies board-2.bin file(s) that, in the interim,
 overwrite those supplied by the ath10k-firmware-* packages.
 
-This is package is only necessary for the GL.iNet GL-B2200.
+This is package is only necessary for the GL.iNet GL-AXT1800.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-glinet_gl-ax1800
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x||TARGET_ipq60xx)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-glinet_gl-ap1300
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for GL.iNet GL-AX1800
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The GL.iNet GL-AX1800 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the GL.iNet GL-AX1800.
 
 Do not install it for any other device!
 
@@ -428,8 +178,8 @@ Do not install it for any other device!
 Package: ipq-wifi-glinet_gl-s1300
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-aruba_ap-365 ipq-wifi-asus_rt-ac42u ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-b2200
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x||TARGET_ipq60xx)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-ax1800 ipq-wifi-glinet_gl-axt1800
 Menu-Depends: 
 Provides: 
 Section: firmware
@@ -453,8 +203,8 @@ Do not install it for any other device!
 Package: ipq-wifi-linksys_ea8300
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-aruba_ap-365 ipq-wifi-asus_rt-ac42u ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-b2200 ipq-wifi-glinet_gl-s1300
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x||TARGET_ipq60xx)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-ax1800 ipq-wifi-glinet_gl-axt1800 ipq-wifi-glinet_gl-s1300
 Menu-Depends: 
 Provides: 
 Section: firmware
@@ -475,101 +225,51 @@ Do not install it for any other device!
 
 @@
 
-Package: ipq-wifi-linksys_mr8300-v0
+Package: ipq-wifi-netgear_sxk30
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-aruba_ap-365 ipq-wifi-asus_rt-ac42u ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-b2200 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x||TARGET_ipq60xx)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-ax1800 ipq-wifi-glinet_gl-axt1800 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300
 Menu-Depends: 
 Provides: 
 Section: firmware
 Category: Firmware
-Title: board-2.bin Overrides for Linksys MR8300
+Title: board-2.bin Overrides for Netgear SXK30
 Maintainer: 
 Source: 
 Type: ipkg
-Description: The Linksys MR8300 requires board-specific, reference ("cal") data
+Description: The Netgear SXK30 requires board-specific, reference ("cal") data
 that is not yet present in the upstream wireless firmware distribution.
 
 This package supplies board-2.bin file(s) that, in the interim,
 overwrite those supplied by the ath10k-firmware-* packages.
 
-This is package is only necessary for the Linksys MR8300.
+This is package is only necessary for the Netgear SXK30.
 
 Do not install it for any other device!
 
 @@
 
-Package: ipq-wifi-luma_wrtq-329acn
+Package: ipq-wifi-netgear_wax610
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-aruba_ap-365 ipq-wifi-asus_rt-ac42u ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-b2200 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x||TARGET_ipq60xx)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-ax1800 ipq-wifi-glinet_gl-axt1800 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300 ipq-wifi-netgear_sxk30
 Menu-Depends: 
 Provides: 
 Section: firmware
 Category: Firmware
-Title: board-2.bin Overrides for Luma WRTQ-329ACN
+Title: board-2.bin Overrides for Netgear WAX610
 Maintainer: 
 Source: 
 Type: ipkg
-Description: The Luma WRTQ-329ACN requires board-specific, reference ("cal") data
+Description: The Netgear WAX610 requires board-specific, reference ("cal") data
 that is not yet present in the upstream wireless firmware distribution.
 
 This package supplies board-2.bin file(s) that, in the interim,
 overwrite those supplied by the ath10k-firmware-* packages.
 
-This is package is only necessary for the Luma WRTQ-329ACN.
-
-Do not install it for any other device!
-
-@@
-
-Package: ipq-wifi-mobipromo_cm520-79f
-Submenu: ath10k Board-Specific Overrides
-Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-aruba_ap-365 ipq-wifi-asus_rt-ac42u ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-b2200 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0 ipq-wifi-luma_wrtq-329acn
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Title: board-2.bin Overrides for MobiPromo CM520-79F
-Maintainer: 
-Source: 
-Type: ipkg
-Description: The MobiPromo CM520-79F requires board-specific, reference ("cal") data
-that is not yet present in the upstream wireless firmware distribution.
-
-This package supplies board-2.bin file(s) that, in the interim,
-overwrite those supplied by the ath10k-firmware-* packages.
-
-This is package is only necessary for the MobiPromo CM520-79F.
-
-Do not install it for any other device!
-
-@@
-
-Package: ipq-wifi-nec_wg2600hp3
-Submenu: ath10k Board-Specific Overrides
-Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-aruba_ap-365 ipq-wifi-asus_rt-ac42u ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-b2200 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0 ipq-wifi-luma_wrtq-329acn ipq-wifi-mobipromo_cm520-79f
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Title: board-2.bin Overrides for NEC Platforms WG2600HP3
-Maintainer: 
-Source: 
-Type: ipkg
-Description: The NEC Platforms WG2600HP3 requires board-specific, reference ("cal") data
-that is not yet present in the upstream wireless firmware distribution.
-
-This package supplies board-2.bin file(s) that, in the interim,
-overwrite those supplied by the ath10k-firmware-* packages.
-
-This is package is only necessary for the NEC Platforms WG2600HP3.
+This is package is only necessary for the Netgear WAX610.
 
 Do not install it for any other device!
 
@@ -578,8 +278,8 @@ Do not install it for any other device!
 Package: ipq-wifi-p2w_r619ac
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-aruba_ap-365 ipq-wifi-asus_rt-ac42u ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-b2200 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0 ipq-wifi-luma_wrtq-329acn ipq-wifi-mobipromo_cm520-79f ipq-wifi-nec_wg2600hp3
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x||TARGET_ipq60xx)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-ax1800 ipq-wifi-glinet_gl-axt1800 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300 ipq-wifi-netgear_sxk30 ipq-wifi-netgear_wax610
 Menu-Depends: 
 Provides: 
 Section: firmware
@@ -600,61 +300,11 @@ Do not install it for any other device!
 
 @@
 
-Package: ipq-wifi-plasmacloud_pa1200
-Submenu: ath10k Board-Specific Overrides
-Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-aruba_ap-365 ipq-wifi-asus_rt-ac42u ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-b2200 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0 ipq-wifi-luma_wrtq-329acn ipq-wifi-mobipromo_cm520-79f ipq-wifi-nec_wg2600hp3 ipq-wifi-p2w_r619ac
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Title: board-2.bin Overrides for Plasma Cloud PA1200
-Maintainer: 
-Source: 
-Type: ipkg
-Description: The Plasma Cloud PA1200 requires board-specific, reference ("cal") data
-that is not yet present in the upstream wireless firmware distribution.
-
-This package supplies board-2.bin file(s) that, in the interim,
-overwrite those supplied by the ath10k-firmware-* packages.
-
-This is package is only necessary for the Plasma Cloud PA1200.
-
-Do not install it for any other device!
-
-@@
-
-Package: ipq-wifi-plasmacloud_pa2200
-Submenu: ath10k Board-Specific Overrides
-Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-aruba_ap-365 ipq-wifi-asus_rt-ac42u ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-b2200 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0 ipq-wifi-luma_wrtq-329acn ipq-wifi-mobipromo_cm520-79f ipq-wifi-nec_wg2600hp3 ipq-wifi-p2w_r619ac ipq-wifi-plasmacloud_pa1200
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Title: board-2.bin Overrides for Plasma Cloud PA2200
-Maintainer: 
-Source: 
-Type: ipkg
-Description: The Plasma Cloud PA2200 requires board-specific, reference ("cal") data
-that is not yet present in the upstream wireless firmware distribution.
-
-This package supplies board-2.bin file(s) that, in the interim,
-overwrite those supplied by the ath10k-firmware-* packages.
-
-This is package is only necessary for the Plasma Cloud PA2200.
-
-Do not install it for any other device!
-
-@@
-
 Package: ipq-wifi-qxwlan_e2600ac-c1
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-aruba_ap-365 ipq-wifi-asus_rt-ac42u ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-b2200 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0 ipq-wifi-luma_wrtq-329acn ipq-wifi-mobipromo_cm520-79f ipq-wifi-nec_wg2600hp3 ipq-wifi-p2w_r619ac ipq-wifi-plasmacloud_pa1200 ipq-wifi-plasmacloud_pa2200
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x||TARGET_ipq60xx)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-ax1800 ipq-wifi-glinet_gl-axt1800 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300 ipq-wifi-netgear_sxk30 ipq-wifi-netgear_wax610 ipq-wifi-p2w_r619ac
 Menu-Depends: 
 Provides: 
 Section: firmware
@@ -678,8 +328,8 @@ Do not install it for any other device!
 Package: ipq-wifi-qxwlan_e2600ac-c2
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-aruba_ap-365 ipq-wifi-asus_rt-ac42u ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-b2200 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0 ipq-wifi-luma_wrtq-329acn ipq-wifi-mobipromo_cm520-79f ipq-wifi-nec_wg2600hp3 ipq-wifi-p2w_r619ac ipq-wifi-plasmacloud_pa1200 ipq-wifi-plasmacloud_pa2200 ipq-wifi-qxwlan_e2600ac-c1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x||TARGET_ipq60xx)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-ax1800 ipq-wifi-glinet_gl-axt1800 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300 ipq-wifi-netgear_sxk30 ipq-wifi-netgear_wax610 ipq-wifi-p2w_r619ac ipq-wifi-qxwlan_e2600ac-c1
 Menu-Depends: 
 Provides: 
 Section: firmware
@@ -703,8 +353,8 @@ Do not install it for any other device!
 Package: ipq-wifi-teltonika_rutx
 Submenu: ath10k Board-Specific Overrides
 Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-aruba_ap-365 ipq-wifi-asus_rt-ac42u ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-b2200 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0 ipq-wifi-luma_wrtq-329acn ipq-wifi-mobipromo_cm520-79f ipq-wifi-nec_wg2600hp3 ipq-wifi-p2w_r619ac ipq-wifi-plasmacloud_pa1200 ipq-wifi-plasmacloud_pa2200 ipq-wifi-qxwlan_e2600ac-c1 ipq-wifi-qxwlan_e2600ac-c2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x||TARGET_ipq60xx)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-ax1800 ipq-wifi-glinet_gl-axt1800 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300 ipq-wifi-netgear_sxk30 ipq-wifi-netgear_wax610 ipq-wifi-p2w_r619ac ipq-wifi-qxwlan_e2600ac-c1 ipq-wifi-qxwlan_e2600ac-c2
 Menu-Depends: 
 Provides: 
 Section: firmware
@@ -720,56 +370,6 @@ This package supplies board-2.bin file(s) that, in the interim,
 overwrite those supplied by the ath10k-firmware-* packages.
 
 This is package is only necessary for the Teltonika RUTX.
-
-Do not install it for any other device!
-
-@@
-
-Package: ipq-wifi-zte_mf286d
-Submenu: ath10k Board-Specific Overrides
-Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-aruba_ap-365 ipq-wifi-asus_rt-ac42u ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-b2200 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0 ipq-wifi-luma_wrtq-329acn ipq-wifi-mobipromo_cm520-79f ipq-wifi-nec_wg2600hp3 ipq-wifi-p2w_r619ac ipq-wifi-plasmacloud_pa1200 ipq-wifi-plasmacloud_pa2200 ipq-wifi-qxwlan_e2600ac-c1 ipq-wifi-qxwlan_e2600ac-c2 ipq-wifi-teltonika_rutx
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Title: board-2.bin Overrides for ZTE MF286D
-Maintainer: 
-Source: 
-Type: ipkg
-Description: The ZTE MF286D requires board-specific, reference ("cal") data
-that is not yet present in the upstream wireless firmware distribution.
-
-This package supplies board-2.bin file(s) that, in the interim,
-overwrite those supplied by the ath10k-firmware-* packages.
-
-This is package is only necessary for the ZTE MF286D.
-
-Do not install it for any other device!
-
-@@
-
-Package: ipq-wifi-zte_mf289f
-Submenu: ath10k Board-Specific Overrides
-Version: 1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @(TARGET_ipq40xx||TARGET_ipq806x)
-Conflicts: ipq-wifi-8dev_habanero-dvk ipq-wifi-aruba_ap-303 ipq-wifi-aruba_ap-365 ipq-wifi-asus_rt-ac42u ipq-wifi-avm_fritzrepeater-1200 ipq-wifi-buffalo_wtr-m2133hp ipq-wifi-cellc_rtl30vw ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dlink_dap2610 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-engenius_eap2200 ipq-wifi-engenius_emd1 ipq-wifi-engenius_emr3500 ipq-wifi-ezviz_cs-w3-wd1200g-eup ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-b2200 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300 ipq-wifi-linksys_mr8300-v0 ipq-wifi-luma_wrtq-329acn ipq-wifi-mobipromo_cm520-79f ipq-wifi-nec_wg2600hp3 ipq-wifi-p2w_r619ac ipq-wifi-plasmacloud_pa1200 ipq-wifi-plasmacloud_pa2200 ipq-wifi-qxwlan_e2600ac-c1 ipq-wifi-qxwlan_e2600ac-c2 ipq-wifi-teltonika_rutx ipq-wifi-zte_mf286d
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Title: board-2.bin Overrides for ZTE MF289F
-Maintainer: 
-Source: 
-Type: ipkg
-Description: The ZTE MF289F requires board-specific, reference ("cal") data
-that is not yet present in the upstream wireless firmware distribution.
-
-This package supplies board-2.bin file(s) that, in the interim,
-overwrite those supplied by the ath10k-firmware-* packages.
-
-This is package is only necessary for the ZTE MF289F.
 
 Do not install it for any other device!
 

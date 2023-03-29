@@ -1,24 +1,24 @@
 Source-Makefile: package/firmware/linux-firmware/Makefile
 
-Package: rs9113-firmware
+Package: amd64-microcode
 Version: 20220411-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_x86
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: firmware
 Category: Firmware
 Repository: base
-Title: RedPine Signals rs9113 firmware
+Title: AMD64 CPU microcode
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: linux-firmware-20220411.tar.xz
 Type: ipkg
-Description: RedPine Signals rs9113 firmware
+Description: AMD64 CPU microcode
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
 
-Package: wl12xx-firmware
+Package: amdgpu-firmware
 Version: 20220411-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
@@ -27,16 +27,16 @@ Provides:
 Section: firmware
 Category: Firmware
 Repository: base
-Title: TI WL12xx firmware
+Title: AMDGPU Video Driver firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: linux-firmware-20220411.tar.xz
 Type: ipkg
-Description: TI WL12xx firmware
+Description: AMDGPU Video Driver firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
 
-Package: wl18xx-firmware
+Package: radeon-firmware
 Version: 20220411-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
@@ -45,16 +45,16 @@ Provides:
 Section: firmware
 Category: Firmware
 Repository: base
-Title: TI WL18xx firmware
+Title: Radeon Video Driver firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: linux-firmware-20220411.tar.xz
 Type: ipkg
-Description: TI WL18xx firmware
+Description: Radeon Video Driver firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
 
-Package: ti-3410-firmware
+Package: brcmfmac-firmware-43602a1-pcie
 Version: 20220411-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
@@ -63,16 +63,16 @@ Provides:
 Section: firmware
 Category: Firmware
 Repository: base
-Title: TI 3410 firmware
+Title: Broadcom 43602a1 FullMAC PCIe firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: linux-firmware-20220411.tar.xz
 Type: ipkg
-Description: TI 3410 firmware
+Description: Broadcom 43602a1 FullMAC PCIe firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
 
-Package: ti-5052-firmware
+Package: brcmfmac-firmware-4366b1-pcie
 Version: 20220411-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
@@ -81,11 +81,227 @@ Provides:
 Section: firmware
 Category: Firmware
 Repository: base
-Title: TI 5052 firmware
+Title: Broadcom 4366b1 FullMAC PCIe firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: linux-firmware-20220411.tar.xz
 Type: ipkg
-Description: TI 5052 firmware
+Description: Broadcom 4366b1 FullMAC PCIe firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: brcmfmac-firmware-4366c0-pcie
+Version: 20220411-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Broadcom 4366c0 FullMAC PCIe firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20220411.tar.xz
+Type: ipkg
+Description: Broadcom 4366c0 FullMAC PCIe firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: brcmfmac-firmware-4329-sdio
+Version: 20220411-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Broadcom BCM4329 FullMac SDIO firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20220411.tar.xz
+Type: ipkg
+Description: Broadcom BCM4329 FullMac SDIO firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: brcmfmac-firmware-43430-sdio-rpi-3b
+Version: 20220411-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Broadcom BCM43430 NVRAM for Raspberry Pi 3B
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20220411.tar.xz
+Type: ipkg
+Description: Broadcom BCM43430 NVRAM for Raspberry Pi 3B
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: brcmfmac-firmware-43430-sdio-rpi-zero-w
+Version: 20220411-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Broadcom BCM43430 NVRAM for Raspberry Pi Zero W
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20220411.tar.xz
+Type: ipkg
+Description: Broadcom BCM43430 NVRAM for Raspberry Pi Zero W
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: brcmfmac-firmware-43430a0-sdio
+Version: 20220411-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Broadcom BCM43430a0 FullMac SDIO firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20220411.tar.xz
+Type: ipkg
+Description: Broadcom BCM43430a0 FullMac SDIO firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: brcmfmac-firmware-43455-sdio-rpi-3b-plus
+Version: 20220411-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Broadcom BCM43455 NVRAM for Raspberry Pi 3B+
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20220411.tar.xz
+Type: ipkg
+Description: Broadcom BCM43455 NVRAM for Raspberry Pi 3B+
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: brcmfmac-firmware-43455-sdio-rpi-4b
+Version: 20220411-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Broadcom BCM43455 NVRAM for Raspberry Pi 4B
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20220411.tar.xz
+Type: ipkg
+Description: Broadcom BCM43455 NVRAM for Raspberry Pi 4B
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: brcmfmac-firmware-usb
+Version: 20220411-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Broadcom BCM43xx fullmac USB firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20220411.tar.xz
+Type: ipkg
+Description: Broadcom BCM43xx fullmac USB firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: brcmsmac-firmware
+Version: 20220411-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Broadcom BCM43xx softmac PCIe firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20220411.tar.xz
+Type: ipkg
+Description: Broadcom BCM43xx softmac PCIe firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: bnx2-firmware
+Version: 20220411-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Broadcom BCM5706/5708/5709/5716 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20220411.tar.xz
+Type: ipkg
+Description: Broadcom BCM5706/5708/5709/5716 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: bnx2x-firmware
+Version: 20220411-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: =QLogic 5771x/578xx firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20220411.tar.xz
+Type: ipkg
+Description: =QLogic 5771x/578xx firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: aircard-pcmcia-firmware
+Version: 20220411-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Sierra Wireless Aircard 555/7xx/8x0 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20220411.tar.xz
+Type: ipkg
+Description: Sierra Wireless Aircard 555/7xx/8x0 firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
@@ -104,24 +320,6 @@ Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: linux-firmware-20220411.tar.xz
 Type: ipkg
 Description: USB Inside Out Edgeport Serial Driver firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: eip197-mini-firmware
-Version: 20220411-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Inside Secure EIP197 mini firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20220411.tar.xz
-Type: ipkg
-Description: Inside Secure EIP197 mini firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
@@ -612,6 +810,114 @@ http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
 
+Package: mwl8k-firmware
+Version: 20220411-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Marvell 8366/8687 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20220411.tar.xz
+Type: ipkg
+Description: Marvell 8366/8687 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: mwifiex-pcie-firmware
+Version: 20220411-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Marvell 8897 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20220411.tar.xz
+Type: ipkg
+Description: Marvell 8897 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: mwifiex-sdio-firmware
+Version: 20220411-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Marvell 8887/8997 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20220411.tar.xz
+Type: ipkg
+Description: Marvell 8887/8997 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: libertas-usb-firmware
+Version: 20220411-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Marvell 8388/8682 USB firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20220411.tar.xz
+Type: ipkg
+Description: Marvell 8388/8682 USB firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: libertas-sdio-firmware
+Version: 20220411-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Marvell 8385/8686/8688 SDIO firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20220411.tar.xz
+Type: ipkg
+Description: Marvell 8385/8686/8688 SDIO firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: libertas-spi-firmware
+Version: 20220411-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Marvell 8686 SPI firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20220411.tar.xz
+Type: ipkg
+Description: Marvell 8686 SPI firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
 Package: mt7601u-firmware
 Version: 20220411-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
@@ -720,25 +1026,7 @@ http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
 
-Package: amd64-microcode
-Version: 20220411-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_x86
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: AMD64 CPU microcode
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20220411.tar.xz
-Type: ipkg
-Description: AMD64 CPU microcode
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: amdgpu-firmware
+Package: eip197-mini-firmware
 Version: 20220411-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
@@ -747,29 +1035,11 @@ Provides:
 Section: firmware
 Category: Firmware
 Repository: base
-Title: AMDGPU Video Driver firmware
+Title: Inside Secure EIP197 mini firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: linux-firmware-20220411.tar.xz
 Type: ipkg
-Description: AMDGPU Video Driver firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: radeon-firmware
-Version: 20220411-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Radeon Video Driver firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20220411.tar.xz
-Type: ipkg
-Description: Radeon Video Driver firmware
+Description: Inside Secure EIP197 mini firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
@@ -860,366 +1130,6 @@ Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: linux-firmware-20220411.tar.xz
 Type: ipkg
 Description: wil6210 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: r8152-firmware
-Version: 20220411-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: RealTek RTL8152 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20220411.tar.xz
-Type: ipkg
-Description: RealTek RTL8152 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: r8169-firmware
-Version: 20220411-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: RealTek RTL8169 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20220411.tar.xz
-Type: ipkg
-Description: RealTek RTL8169 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: rtl8188eu-firmware
-Version: 20220411-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: RealTek RTL8188EU firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20220411.tar.xz
-Type: ipkg
-Description: RealTek RTL8188EU firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: rtl8192ce-firmware
-Version: 20220411-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: RealTek RTL8192CE firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20220411.tar.xz
-Type: ipkg
-Description: RealTek RTL8192CE firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: rtl8192cu-firmware
-Version: 20220411-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: RealTek RTL8192CU firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20220411.tar.xz
-Type: ipkg
-Description: RealTek RTL8192CU firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: rtl8192de-firmware
-Version: 20220411-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: RealTek RTL8192DE firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20220411.tar.xz
-Type: ipkg
-Description: RealTek RTL8192DE firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: rtl8192eu-firmware
-Version: 20220411-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: RealTek RTL8192EU firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20220411.tar.xz
-Type: ipkg
-Description: RealTek RTL8192EU firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: rtl8192se-firmware
-Version: 20220411-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: RealTek RTL8192SE firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20220411.tar.xz
-Type: ipkg
-Description: RealTek RTL8192SE firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: rtl8723au-firmware
-Version: 20220411-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: RealTek RTL8723AU firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20220411.tar.xz
-Type: ipkg
-Description: RealTek RTL8723AU firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: rtl8723bu-firmware
-Version: 20220411-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: RealTek RTL8723BU firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20220411.tar.xz
-Type: ipkg
-Description: RealTek RTL8723BU firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: rtl8821ae-firmware
-Version: 20220411-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: RealTek RTL8821AE firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20220411.tar.xz
-Type: ipkg
-Description: RealTek RTL8821AE firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: rtl8822be-firmware
-Version: 20220411-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: RealTek RTL8822BE firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20220411.tar.xz
-Type: ipkg
-Description: RealTek RTL8822BE firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: rtl8822ce-firmware
-Version: 20220411-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: RealTek RTL8822CE firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20220411.tar.xz
-Type: ipkg
-Description: RealTek RTL8822CE firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: aircard-pcmcia-firmware
-Version: 20220411-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Sierra Wireless Aircard 555/7xx/8x0 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20220411.tar.xz
-Type: ipkg
-Description: Sierra Wireless Aircard 555/7xx/8x0 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: mwl8k-firmware
-Version: 20220411-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Marvell 8366/8687 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20220411.tar.xz
-Type: ipkg
-Description: Marvell 8366/8687 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: mwifiex-pcie-firmware
-Version: 20220411-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Marvell 8897 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20220411.tar.xz
-Type: ipkg
-Description: Marvell 8897 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: mwifiex-sdio-firmware
-Version: 20220411-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Marvell 8887/8997 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20220411.tar.xz
-Type: ipkg
-Description: Marvell 8887/8997 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: libertas-usb-firmware
-Version: 20220411-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Marvell 8388/8682 USB firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20220411.tar.xz
-Type: ipkg
-Description: Marvell 8388/8682 USB firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: libertas-sdio-firmware
-Version: 20220411-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Marvell 8385/8686/8688 SDIO firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20220411.tar.xz
-Type: ipkg
-Description: Marvell 8385/8686/8688 SDIO firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: libertas-spi-firmware
-Version: 20220411-1
-Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Marvell 8686 SPI firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20220411.tar.xz
-Type: ipkg
-Description: Marvell 8686 SPI firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
@@ -1494,7 +1404,7 @@ http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
 
-Package: brcmfmac-firmware-43602a1-pcie
+Package: r8152-firmware
 Version: 20220411-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
@@ -1503,16 +1413,16 @@ Provides:
 Section: firmware
 Category: Firmware
 Repository: base
-Title: Broadcom 43602a1 FullMAC PCIe firmware
+Title: RealTek RTL8152 firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: linux-firmware-20220411.tar.xz
 Type: ipkg
-Description: Broadcom 43602a1 FullMAC PCIe firmware
+Description: RealTek RTL8152 firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
 
-Package: brcmfmac-firmware-4366b1-pcie
+Package: r8169-firmware
 Version: 20220411-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
@@ -1521,16 +1431,16 @@ Provides:
 Section: firmware
 Category: Firmware
 Repository: base
-Title: Broadcom 4366b1 FullMAC PCIe firmware
+Title: RealTek RTL8169 firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: linux-firmware-20220411.tar.xz
 Type: ipkg
-Description: Broadcom 4366b1 FullMAC PCIe firmware
+Description: RealTek RTL8169 firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
 
-Package: brcmfmac-firmware-4366c0-pcie
+Package: rtl8188eu-firmware
 Version: 20220411-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
@@ -1539,16 +1449,16 @@ Provides:
 Section: firmware
 Category: Firmware
 Repository: base
-Title: Broadcom 4366c0 FullMAC PCIe firmware
+Title: RealTek RTL8188EU firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: linux-firmware-20220411.tar.xz
 Type: ipkg
-Description: Broadcom 4366c0 FullMAC PCIe firmware
+Description: RealTek RTL8188EU firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
 
-Package: brcmfmac-firmware-4329-sdio
+Package: rtl8192ce-firmware
 Version: 20220411-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
@@ -1557,16 +1467,16 @@ Provides:
 Section: firmware
 Category: Firmware
 Repository: base
-Title: Broadcom BCM4329 FullMac SDIO firmware
+Title: RealTek RTL8192CE firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: linux-firmware-20220411.tar.xz
 Type: ipkg
-Description: Broadcom BCM4329 FullMac SDIO firmware
+Description: RealTek RTL8192CE firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
 
-Package: brcmfmac-firmware-43430-sdio-rpi-3b
+Package: rtl8192cu-firmware
 Version: 20220411-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
@@ -1575,16 +1485,16 @@ Provides:
 Section: firmware
 Category: Firmware
 Repository: base
-Title: Broadcom BCM43430 NVRAM for Raspberry Pi 3B
+Title: RealTek RTL8192CU firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: linux-firmware-20220411.tar.xz
 Type: ipkg
-Description: Broadcom BCM43430 NVRAM for Raspberry Pi 3B
+Description: RealTek RTL8192CU firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
 
-Package: brcmfmac-firmware-43430-sdio-rpi-zero-w
+Package: rtl8192de-firmware
 Version: 20220411-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
@@ -1593,16 +1503,16 @@ Provides:
 Section: firmware
 Category: Firmware
 Repository: base
-Title: Broadcom BCM43430 NVRAM for Raspberry Pi Zero W
+Title: RealTek RTL8192DE firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: linux-firmware-20220411.tar.xz
 Type: ipkg
-Description: Broadcom BCM43430 NVRAM for Raspberry Pi Zero W
+Description: RealTek RTL8192DE firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
 
-Package: brcmfmac-firmware-43430a0-sdio
+Package: rtl8192eu-firmware
 Version: 20220411-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
@@ -1611,16 +1521,16 @@ Provides:
 Section: firmware
 Category: Firmware
 Repository: base
-Title: Broadcom BCM43430a0 FullMac SDIO firmware
+Title: RealTek RTL8192EU firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: linux-firmware-20220411.tar.xz
 Type: ipkg
-Description: Broadcom BCM43430a0 FullMac SDIO firmware
+Description: RealTek RTL8192EU firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
 
-Package: brcmfmac-firmware-43455-sdio-rpi-3b-plus
+Package: rtl8192se-firmware
 Version: 20220411-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
@@ -1629,16 +1539,16 @@ Provides:
 Section: firmware
 Category: Firmware
 Repository: base
-Title: Broadcom BCM43455 NVRAM for Raspberry Pi 3B+
+Title: RealTek RTL8192SE firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: linux-firmware-20220411.tar.xz
 Type: ipkg
-Description: Broadcom BCM43455 NVRAM for Raspberry Pi 3B+
+Description: RealTek RTL8192SE firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
 
-Package: brcmfmac-firmware-43455-sdio-rpi-4b
+Package: rtl8723au-firmware
 Version: 20220411-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
@@ -1647,16 +1557,16 @@ Provides:
 Section: firmware
 Category: Firmware
 Repository: base
-Title: Broadcom BCM43455 NVRAM for Raspberry Pi 4B
+Title: RealTek RTL8723AU firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: linux-firmware-20220411.tar.xz
 Type: ipkg
-Description: Broadcom BCM43455 NVRAM for Raspberry Pi 4B
+Description: RealTek RTL8723AU firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
 
-Package: brcmfmac-firmware-usb
+Package: rtl8723bu-firmware
 Version: 20220411-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
@@ -1665,16 +1575,16 @@ Provides:
 Section: firmware
 Category: Firmware
 Repository: base
-Title: Broadcom BCM43xx fullmac USB firmware
+Title: RealTek RTL8723BU firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: linux-firmware-20220411.tar.xz
 Type: ipkg
-Description: Broadcom BCM43xx fullmac USB firmware
+Description: RealTek RTL8723BU firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
 
-Package: brcmsmac-firmware
+Package: rtl8821ae-firmware
 Version: 20220411-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
@@ -1683,16 +1593,16 @@ Provides:
 Section: firmware
 Category: Firmware
 Repository: base
-Title: Broadcom BCM43xx softmac PCIe firmware
+Title: RealTek RTL8821AE firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: linux-firmware-20220411.tar.xz
 Type: ipkg
-Description: Broadcom BCM43xx softmac PCIe firmware
+Description: RealTek RTL8821AE firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
 
-Package: bnx2-firmware
+Package: rtl8822be-firmware
 Version: 20220411-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
@@ -1701,16 +1611,16 @@ Provides:
 Section: firmware
 Category: Firmware
 Repository: base
-Title: Broadcom BCM5706/5708/5709/5716 firmware
+Title: RealTek RTL8822BE firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: linux-firmware-20220411.tar.xz
 Type: ipkg
-Description: Broadcom BCM5706/5708/5709/5716 firmware
+Description: RealTek RTL8822BE firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
 
-Package: bnx2x-firmware
+Package: rtl8822ce-firmware
 Version: 20220411-1
 Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
 Conflicts: 
@@ -1719,11 +1629,101 @@ Provides:
 Section: firmware
 Category: Firmware
 Repository: base
-Title: =QLogic 5771x/578xx firmware
+Title: RealTek RTL8822CE firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: linux-firmware-20220411.tar.xz
 Type: ipkg
-Description: =QLogic 5771x/578xx firmware
+Description: RealTek RTL8822CE firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: rs9113-firmware
+Version: 20220411-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: RedPine Signals rs9113 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20220411.tar.xz
+Type: ipkg
+Description: RedPine Signals rs9113 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: wl12xx-firmware
+Version: 20220411-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: TI WL12xx firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20220411.tar.xz
+Type: ipkg
+Description: TI WL12xx firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: wl18xx-firmware
+Version: 20220411-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: TI WL18xx firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20220411.tar.xz
+Type: ipkg
+Description: TI WL18xx firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: ti-3410-firmware
+Version: 20220411-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: TI 3410 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20220411.tar.xz
+Type: ipkg
+Description: TI 3410 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: ti-5052-firmware
+Version: 20220411-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: TI 5052 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20220411.tar.xz
+Type: ipkg
+Description: TI 5052 firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@

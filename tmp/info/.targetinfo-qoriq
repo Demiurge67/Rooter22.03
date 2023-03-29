@@ -35,7 +35,7 @@ Target-Description:
 Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-wolfssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe e2fsprogs mkf2fs uboot-envtools 
 Target-Profile: DEVICE_watchguard_firebox-m300
 Target-Profile-Name: WatchGuard Firebox M300
-Target-Profile-Packages: kmod-gpio-button-hotplug kmod-hwmon-w83793 kmod-leds-gpio kmod-ptp-qoriq kmod-rtc-rs5c372a kmod-tpm-i2c-atmel 
+Target-Profile-Packages: kmod-gpio-button-hotplug kmod-hwmon-w83793 kmod-leds-gpio kmod-ptp-qoriq kmod-rtc-rs5c372a kmod-tpm-i2c-atmel
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: watchguard,firebox-m300
 

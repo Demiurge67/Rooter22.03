@@ -50,7 +50,7 @@ Target-Profile-Description:
 
 Target-Profile: DEVICE_comtrend_ar-5315u
 Target-Profile-Name: Comtrend AR-5315u
-Target-Profile-Packages:  kmod-usb-ohci kmod-ledtrig-usbdev kmod-usb2 kmod-b43 wpad-basic-wolfssl iwinfo
+Target-Profile-Packages: kmod-usb-ohci kmod-ledtrig-usbdev kmod-usb2 kmod-b43 wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: comtrend,ar-5315u
 
@@ -64,7 +64,7 @@ Build firmware images for Comtrend AR-5315u
 
 Target-Profile: DEVICE_comtrend_ar-5387un
 Target-Profile-Name: Comtrend AR-5387un
-Target-Profile-Packages:  kmod-usb-ohci kmod-ledtrig-usbdev kmod-usb2 kmod-b43 wpad-basic-wolfssl iwinfo
+Target-Profile-Packages: kmod-usb-ohci kmod-ledtrig-usbdev kmod-usb2 kmod-b43 wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: comtrend,ar-5387un
 
@@ -78,7 +78,7 @@ Build firmware images for Comtrend AR-5387un
 
 Target-Profile: DEVICE_comtrend_vr-3025u
 Target-Profile-Name: Comtrend VR-3025u
-Target-Profile-Packages:  kmod-usb-ohci kmod-ledtrig-usbdev kmod-usb2 kmod-b43 wpad-basic-wolfssl iwinfo
+Target-Profile-Packages: kmod-usb-ohci kmod-ledtrig-usbdev kmod-usb2 kmod-b43 wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: comtrend,vr-3025u
 
@@ -92,7 +92,7 @@ Build firmware images for Comtrend VR-3025u
 
 Target-Profile: DEVICE_huawei_hg556a-b
 Target-Profile-Name: Huawei EchoLife HG556a B
-Target-Profile-Packages:  kmod-usb-ohci kmod-ledtrig-usbdev kmod-usb2 kmod-ath9k wpad-basic-wolfssl iwinfo
+Target-Profile-Packages: kmod-usb-ohci kmod-ledtrig-usbdev kmod-usb2 kmod-ath9k wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: huawei,hg556a-b
 
@@ -130,7 +130,7 @@ Target-Profile-Description:
 
 Target-Profile: DEVICE_comtrend_vr-3032u
 Target-Profile-Name: Comtrend VR-3032u
-Target-Profile-Packages:  nand-utils kmod-usb-ohci kmod-ledtrig-usbdev kmod-usb2 
+Target-Profile-Packages: nand-utils kmod-usb-ohci kmod-ledtrig-usbdev kmod-usb2
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: comtrend,vr-3032u
 
@@ -144,7 +144,7 @@ Build firmware images for Comtrend VR-3032u
 
 Target-Profile: DEVICE_netgear_dgnd3700-v2
 Target-Profile-Name: NETGEAR DGND3700 v2
-Target-Profile-Packages:  nand-utils kmod-usb-ohci kmod-ledtrig-usbdev kmod-usb2 kmod-b43 wpad-basic-wolfssl iwinfo
+Target-Profile-Packages: nand-utils kmod-usb-ohci kmod-ledtrig-usbdev kmod-usb2 kmod-b43 wpad-basic-wolfssl iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: netgear,dgnd3700-v2
 

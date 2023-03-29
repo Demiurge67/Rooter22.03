@@ -41,7 +41,7 @@ Target-Profile-Description:
 
 Target-Profile: DEVICE_tplink_tl-wdr4900-v1
 Target-Profile-Name: TP-Link TL-WDR4900 v1
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: tplink,tl-wdr4900-v1 tl-wdr4900-v1
 
@@ -55,7 +55,7 @@ Build firmware images for TP-Link TL-WDR4900 v1
 
 Target-Profile: DEVICE_sophos_red-15w-rev1
 Target-Profile-Name: Sophos RED 15w Rev.1
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: sophos,red-15w-rev1
 
@@ -93,7 +93,7 @@ Target-Profile-Description:
 
 Target-Profile: DEVICE_aerohive_hiveap-330
 Target-Profile-Name: Aerohive HiveAP-350 (Aerohive HiveAP-330)
-Target-Profile-Packages: kmod-tpm-i2c-atmel kmod-hwmon-lm70 
+Target-Profile-Packages: kmod-tpm-i2c-atmel kmod-hwmon-lm70
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: aerohive,hiveap-330
 
@@ -108,7 +108,7 @@ Alternative device titles:
 
 Target-Profile: DEVICE_aerohive_hiveap-330
 Target-Profile-Name: Aerohive HiveAP-330
-Target-Profile-Packages: kmod-tpm-i2c-atmel kmod-hwmon-lm70 
+Target-Profile-Packages: kmod-tpm-i2c-atmel kmod-hwmon-lm70
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: aerohive,hiveap-330
 
@@ -123,7 +123,7 @@ Alternative device titles:
 
 Target-Profile: DEVICE_enterasys_ws-ap3710i
 Target-Profile-Name: Enterasys WS-AP3710i
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: enterasys,ws-ap3710i
 
@@ -137,7 +137,7 @@ Build firmware images for Enterasys WS-AP3710i
 
 Target-Profile: DEVICE_extreme-networks_ws-ap3825i
 Target-Profile-Name: Extreme Networks WS-AP3825i
-Target-Profile-Packages: kmod-ath10k-ct ath10k-firmware-qca988x-ct 
+Target-Profile-Packages: kmod-ath10k-ct ath10k-firmware-qca988x-ct
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: extreme-networks,ws-ap3825i
 
@@ -151,7 +151,7 @@ Build firmware images for Extreme Networks WS-AP3825i
 
 Target-Profile: DEVICE_ocedo_panda
 Target-Profile-Name: OCEDO Panda
-Target-Profile-Packages: kmod-rtc-ds1307 
+Target-Profile-Packages: kmod-rtc-ds1307
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: ocedo,panda
 
@@ -189,7 +189,7 @@ Target-Profile-Description:
 
 Target-Profile: DEVICE_freescale_p2020rdb
 Target-Profile-Name: Freescale P2020RDB
-Target-Profile-Packages: kmod-hwmon-lm90 kmod-rtc-ds1307 kmod-gpio-pca953x kmod-eeprom-at24 
+Target-Profile-Packages: kmod-hwmon-lm90 kmod-rtc-ds1307 kmod-gpio-pca953x kmod-eeprom-at24
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,P2020RDB
 

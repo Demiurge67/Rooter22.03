@@ -405,7 +405,7 @@ Config:
 
 Package: libgfortran
 Version: <LIBGCC_VERSION>-4
-Depends:  @INSTALL_GFORTRAN
+Depends: @INSTALL_GFORTRAN
 Conflicts: 
 Menu-Depends: 
 Provides: 

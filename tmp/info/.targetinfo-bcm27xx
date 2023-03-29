@@ -128,7 +128,7 @@ Target-Description:
 Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-wolfssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe bcm27xx-gpu-fw kmod-usb-hid kmod-sound-core kmod-sound-arm-bcm2835 kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 partx-utils mkf2fs e2fsprogs 
 Target-Profile: DEVICE_rpi-3
 Target-Profile-Name: Raspberry Pi 2B-1.2 (64bit) (Raspberry Pi 3B/3B+/3CM (64bit))
-Target-Profile-Packages: cypress-firmware-43430-sdio cypress-nvram-43430-sdio-rpi-3b cypress-firmware-43455-sdio cypress-nvram-43455-sdio-rpi-3b-plus kmod-brcmfmac wpad-basic-wolfssl iwinfo
+Target-Profile-Packages: cypress-firmware-43430-sdio cypress-nvram-43430-sdio-rpi-3b cypress-firmware-43455-sdio cypress-nvram-43455-sdio-rpi-3b-plus kmod-brcmfmac wpad-basic-wolfssl kmod-usb-dwc2 iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: rpi-3-b rpi-3-b-plus raspberrypi,2-model-b-rev2 raspberrypi,3-model-b raspberrypi,3-model-b-plus raspberrypi,3-compute-module raspberrypi,compute-module-3
 
@@ -143,7 +143,7 @@ Alternative device titles:
 
 Target-Profile: DEVICE_rpi-3
 Target-Profile-Name: Raspberry Pi 3B/3B+/3CM (64bit)
-Target-Profile-Packages: cypress-firmware-43430-sdio cypress-nvram-43430-sdio-rpi-3b cypress-firmware-43455-sdio cypress-nvram-43455-sdio-rpi-3b-plus kmod-brcmfmac wpad-basic-wolfssl iwinfo
+Target-Profile-Packages: cypress-firmware-43430-sdio cypress-nvram-43430-sdio-rpi-3b cypress-firmware-43455-sdio cypress-nvram-43455-sdio-rpi-3b-plus kmod-brcmfmac wpad-basic-wolfssl kmod-usb-dwc2 iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: rpi-3-b rpi-3-b-plus raspberrypi,2-model-b-rev2 raspberrypi,3-model-b raspberrypi,3-model-b-plus raspberrypi,3-compute-module raspberrypi,compute-module-3
 
@@ -175,7 +175,7 @@ Target-Description:
 Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-wolfssl logd mtd netifd opkg uci uclient-fetch urandom-seed busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe bcm27xx-gpu-fw kmod-usb-hid kmod-sound-core kmod-sound-arm-bcm2835 kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 partx-utils mkf2fs e2fsprogs 
 Target-Profile: DEVICE_rpi-4
 Target-Profile-Name: Raspberry Pi 4B/400/4CM (64bit)
-Target-Profile-Packages: cypress-firmware-43455-sdio cypress-nvram-43455-sdio-rpi-4b kmod-brcmfmac wpad-basic-wolfssl kmod-usb-net-lan78xx iwinfo
+Target-Profile-Packages: cypress-firmware-43455-sdio cypress-nvram-43455-sdio-rpi-4b kmod-brcmfmac wpad-basic-wolfssl kmod-usb-net-lan78xx kmod-usb-dwc2 iwinfo
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: raspberrypi,400 raspberrypi,4-compute-module raspberrypi,4-model-b
 

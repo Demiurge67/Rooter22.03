@@ -73,7 +73,7 @@ Target-Profile-Description:
 
 Target-Profile: DEVICE_gateworks_ventana
 Target-Profile-Name: Gateworks Ventana family normal NAND flash
-Target-Profile-Packages: kmod-sky2 kmod-sound-core kmod-sound-soc-imx kmod-sound-soc-imx-sgtl5000 kmod-can kmod-can-flexcan kmod-can-raw kmod-hwmon-gsc kmod-leds-gpio kmod-pps-gpio kobs-ng 
+Target-Profile-Packages: kmod-sky2 kmod-sound-core kmod-sound-soc-imx kmod-sound-soc-imx-sgtl5000 kmod-can kmod-can-flexcan kmod-can-raw kmod-hwmon-gsc kmod-leds-gpio kmod-pps-gpio kobs-ng
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: gateworks,ventana
 
@@ -87,7 +87,7 @@ Build firmware images for Gateworks Ventana family normal NAND flash
 
 Target-Profile: DEVICE_gateworks_ventana-large
 Target-Profile-Name: Gateworks Ventana family large NAND flash
-Target-Profile-Packages: kmod-sky2 kmod-sound-core kmod-sound-soc-imx kmod-sound-soc-imx-sgtl5000 kmod-can kmod-can-flexcan kmod-can-raw kmod-hwmon-gsc kmod-leds-gpio kmod-pps-gpio kobs-ng 
+Target-Profile-Packages: kmod-sky2 kmod-sound-core kmod-sound-soc-imx kmod-sound-soc-imx-sgtl5000 kmod-can kmod-can-flexcan kmod-can-raw kmod-hwmon-gsc kmod-leds-gpio kmod-pps-gpio kobs-ng
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: gateworks,ventana-large
 
@@ -101,7 +101,7 @@ Build firmware images for Gateworks Ventana family large NAND flash
 
 Target-Profile: DEVICE_solidrun_cubox-i
 Target-Profile-Name: SolidRun CuBox-i
-Target-Profile-Packages: kmod-drm-imx kmod-drm-imx-hdmi kmod-usb-hid 
+Target-Profile-Packages: kmod-drm-imx kmod-drm-imx-hdmi kmod-usb-hid
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: solidrun,cubox-i
 
@@ -115,7 +115,7 @@ Build firmware images for SolidRun CuBox-i
 
 Target-Profile: DEVICE_toradex_apalis
 Target-Profile-Name: Toradex Apalis family
-Target-Profile-Packages: kmod-can kmod-can-flexcan kmod-can-raw kmod-leds-gpio kmod-gpio-button-hotplug kmod-pps-gpio kmod-rtc-ds1307 
+Target-Profile-Packages: kmod-can kmod-can-flexcan kmod-can-raw kmod-leds-gpio kmod-gpio-button-hotplug kmod-pps-gpio kmod-rtc-ds1307
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: apalis,ixora apalis,eval
 
@@ -129,7 +129,7 @@ Build firmware images for Toradex Apalis family
 
 Target-Profile: DEVICE_wandboard_dual
 Target-Profile-Name: Wandboard Dual
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 0
 Target-Profile-SupportedDevices: wandboard,dual
 

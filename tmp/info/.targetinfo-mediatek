@@ -33,7 +33,7 @@ Target-Description:
 Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-wolfssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail kmod-mt7615e kmod-mt7615-firmware wpad-basic-wolfssl uboot-envtools dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
 Target-Profile: DEVICE_bananapi_bpi-r64
 Target-Profile-Name: Bananapi BPi-R64
-Target-Profile-Packages: kmod-ata-ahci-mtk kmod-btmtkuart kmod-usb3 e2fsprogs mkf2fs f2fsck 
+Target-Profile-Packages: kmod-ata-ahci-mtk kmod-btmtkuart kmod-usb3 e2fsprogs mkf2fs f2fsck
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: bananapi,bpi-r64
 
@@ -47,7 +47,7 @@ Build firmware images for Bananapi BPi-R64
 
 Target-Profile: DEVICE_buffalo_wsr-2533dhp2
 Target-Profile-Name: Buffalo WSR-2533DHP2
-Target-Profile-Packages: swconfig 
+Target-Profile-Packages: swconfig
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: buffalo,wsr-2533dhp2
 
@@ -61,7 +61,7 @@ Build firmware images for Buffalo WSR-2533DHP2
 
 Target-Profile: DEVICE_elecom_wrc-2533gent
 Target-Profile-Name: Elecom WRC-2533GENT
-Target-Profile-Packages: kmod-btmtkuart kmod-usb3 swconfig 
+Target-Profile-Packages: kmod-btmtkuart kmod-usb3 swconfig
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: elecom,wrc-2533gent
 
@@ -75,7 +75,7 @@ Build firmware images for Elecom WRC-2533GENT
 
 Target-Profile: DEVICE_linksys_e8450
 Target-Profile-Name: Belkin RT3200 (Linksys E8450)
-Target-Profile-Packages: kmod-mt7915e kmod-usb3 
+Target-Profile-Packages: kmod-mt7915e kmod-usb3
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: linksys,e8450
 
@@ -90,7 +90,7 @@ Alternative device titles:
 
 Target-Profile: DEVICE_linksys_e8450
 Target-Profile-Name: Linksys E8450
-Target-Profile-Packages: kmod-mt7915e kmod-usb3 
+Target-Profile-Packages: kmod-mt7915e kmod-usb3
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: linksys,e8450
 
@@ -105,7 +105,7 @@ Alternative device titles:
 
 Target-Profile: DEVICE_linksys_e8450-ubi
 Target-Profile-Name: Belkin RT3200 UBI (Linksys E8450 UBI)
-Target-Profile-Packages: kmod-mt7915e kmod-usb3 
+Target-Profile-Packages: kmod-mt7915e kmod-usb3
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: linksys,e8450-ubi
 
@@ -120,7 +120,7 @@ Alternative device titles:
 
 Target-Profile: DEVICE_linksys_e8450-ubi
 Target-Profile-Name: Linksys E8450 UBI
-Target-Profile-Packages: kmod-mt7915e kmod-usb3 
+Target-Profile-Packages: kmod-mt7915e kmod-usb3
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: linksys,e8450-ubi
 
@@ -135,7 +135,7 @@ Alternative device titles:
 
 Target-Profile: DEVICE_mediatek_mt7622-rfb1
 Target-Profile-Name: MediaTek MTK7622 rfb1 AP
-Target-Profile-Packages: kmod-ata-ahci-mtk kmod-btmtkuart kmod-usb3 
+Target-Profile-Packages: kmod-ata-ahci-mtk kmod-btmtkuart kmod-usb3
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: mediatek,mt7622-rfb1
 
@@ -149,7 +149,7 @@ Build firmware images for MediaTek MTK7622 rfb1 AP
 
 Target-Profile: DEVICE_mediatek_mt7622-rfb1-ubi
 Target-Profile-Name: MediaTek MTK7622 rfb1 AP (UBI)
-Target-Profile-Packages: kmod-ata-ahci-mtk kmod-btmtkuart kmod-usb3 
+Target-Profile-Packages: kmod-ata-ahci-mtk kmod-btmtkuart kmod-usb3
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: mediatek,mt7622-rfb1-ubi
 
@@ -163,7 +163,7 @@ Build firmware images for MediaTek MTK7622 rfb1 AP (UBI)
 
 Target-Profile: DEVICE_ruijie_rg-ew3200gx-pro
 Target-Profile-Name: Ruijie RG-EW3200GX PRO
-Target-Profile-Packages: kmod-mt7915e 
+Target-Profile-Packages: kmod-mt7915e
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: ruijie,rg-ew3200gx-pro
 
@@ -177,7 +177,7 @@ Build firmware images for Ruijie RG-EW3200GX PRO
 
 Target-Profile: DEVICE_totolink_a8000ru
 Target-Profile-Name: TOTOLINK A8000RU
-Target-Profile-Packages: swconfig 
+Target-Profile-Packages: swconfig
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: totolink,a8000ru
 
@@ -191,7 +191,7 @@ Build firmware images for TOTOLINK A8000RU
 
 Target-Profile: DEVICE_ubnt_unifi-6-lr-v1
 Target-Profile-Name: Ubiquiti UniFi 6 LR v1
-Target-Profile-Packages: kmod-mt7915e kmod-leds-ubnt-ledbar 
+Target-Profile-Packages: kmod-mt7915e kmod-leds-ubnt-ledbar
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: ubnt,unifi-6-lr-v1 ubnt,unifi-6-lr
 
@@ -205,7 +205,7 @@ Build firmware images for Ubiquiti UniFi 6 LR v1
 
 Target-Profile: DEVICE_ubnt_unifi-6-lr-v1-ubootmod
 Target-Profile-Name: Ubiquiti UniFi 6 LR v1 U-Boot mod
-Target-Profile-Packages: kmod-mt7915e kmod-leds-ubnt-ledbar 
+Target-Profile-Packages: kmod-mt7915e kmod-leds-ubnt-ledbar
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: ubnt,unifi-6-lr-v1-ubootmod ubnt,unifi-6-lr-ubootmod
 
@@ -219,7 +219,7 @@ Build firmware images for Ubiquiti UniFi 6 LR v1 U-Boot mod
 
 Target-Profile: DEVICE_ubnt_unifi-6-lr-v2
 Target-Profile-Name: Ubiquiti UniFi 6 LR v2
-Target-Profile-Packages: kmod-mt7915e 
+Target-Profile-Packages: kmod-mt7915e
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: ubnt,unifi-6-lr-v2
 
@@ -233,7 +233,7 @@ Build firmware images for Ubiquiti UniFi 6 LR v2
 
 Target-Profile: DEVICE_ubnt_unifi-6-lr-v2-ubootmod
 Target-Profile-Name: Ubiquiti UniFi 6 LR v2 U-Boot mod
-Target-Profile-Packages: kmod-mt7915e 
+Target-Profile-Packages: kmod-mt7915e
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: ubnt,unifi-6-lr-v2-ubootmod
 
@@ -247,7 +247,7 @@ Build firmware images for Ubiquiti UniFi 6 LR v2 U-Boot mod
 
 Target-Profile: DEVICE_xiaomi_redmi-router-ax6s
 Target-Profile-Name: Xiaomi Router AX3200 (Xiaomi Redmi Router AX6S)
-Target-Profile-Packages: kmod-mt7915e 
+Target-Profile-Packages: kmod-mt7915e
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: xiaomi,redmi-router-ax6s
 
@@ -262,7 +262,7 @@ Alternative device titles:
 
 Target-Profile: DEVICE_xiaomi_redmi-router-ax6s
 Target-Profile-Name: Xiaomi Redmi Router AX6S
-Target-Profile-Packages: kmod-mt7915e 
+Target-Profile-Packages: kmod-mt7915e
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: xiaomi,redmi-router-ax6s
 
@@ -293,7 +293,7 @@ Target-Description:
 Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-wolfssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail uboot-envtools dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe kmod-leds-gpio kmod-gpio-button-hotplug 
 Target-Profile: DEVICE_bananapi_bpi-r2
 Target-Profile-Name: Bananapi BPi-R2
-Target-Profile-Packages: mkf2fs e2fsprogs kmod-usb3 kmod-ata-ahci 
+Target-Profile-Packages: mkf2fs e2fsprogs kmod-usb3 kmod-ata-ahci
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: bananapi,bpi-r2
 
@@ -307,7 +307,7 @@ Build firmware images for Bananapi BPi-R2
 
 Target-Profile: DEVICE_unielec_u7623-02
 Target-Profile-Name: UniElec U7623-02
-Target-Profile-Packages: kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 kmod-mmc mkf2fs e2fsprogs kmod-usb-ohci kmod-usb2 kmod-usb3 kmod-ata-ahci 
+Target-Profile-Packages: kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 kmod-mmc mkf2fs e2fsprogs kmod-usb-ohci kmod-usb2 kmod-usb3 kmod-ata-ahci
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: unielec,u7623-02 unielec,u7623-02-emmc-512m
 
@@ -321,7 +321,7 @@ Build firmware images for UniElec U7623-02
 
 Target-Profile: DEVICE_unielec_u7623-02-emmc-512m-legacy
 Target-Profile-Name: UniElec U7623-02 eMMC/512MiB RAM (legacy image)
-Target-Profile-Packages: kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 kmod-mmc mkf2fs e2fsprogs kmod-usb-ohci kmod-usb2 kmod-usb3 kmod-ata-ahci partx-utils 
+Target-Profile-Packages: kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 kmod-mmc mkf2fs e2fsprogs kmod-usb-ohci kmod-usb2 kmod-usb3 kmod-ata-ahci partx-utils
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: unielec,u7623-02-emmc-512m
 
@@ -351,7 +351,7 @@ Target-Description:
 Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-wolfssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe kmod-leds-gpio kmod-gpio-button-hotplug 
 Target-Profile: DEVICE_mediatek_mt7629-rfb
 Target-Profile-Name: MediaTek MT7629 rfb AP
-Target-Profile-Packages: swconfig 
+Target-Profile-Packages: swconfig
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: mediatek,mt7629-rfb
 

@@ -48,12 +48,12 @@ Menu-Depends:
 Provides: 
 Section: net
 Category: Network
-Title:  NCM 3G/4G Support
+Title: NCM 3G/4G Support
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: comgt.0.32.tgz
 License: GPL-2.0+
 Type: ipkg
-Description:  NCM 3G/4G Support
+Description: NCM 3G/4G Support
 Felix Fietkau <nbd@nbd.name>
 @@
 

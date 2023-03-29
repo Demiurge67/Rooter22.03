@@ -35,7 +35,7 @@ Target-Description:
 Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-wolfssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe kmod-usb3 kmod-usb-dwc3 kmod-usb-storage mkf2fs e2fsprogs partx-utils 
 Target-Profile: DEVICE_fsl_ls1012a-frdm
 Target-Profile-Name: NXP FRDM-LS1012A
-Target-Profile-Packages:  layerscape-ppfe tfa-ls1012a-frdm kmod-ppfe 
+Target-Profile-Packages: layerscape-ppfe tfa-ls1012a-frdm kmod-ppfe
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,ls1012a-frdm
 
@@ -49,7 +49,7 @@ Build firmware images for NXP FRDM-LS1012A
 
 Target-Profile: DEVICE_fsl_ls1012a-rdb
 Target-Profile-Name: NXP LS1012A-RDB
-Target-Profile-Packages:  layerscape-ppfe tfa-ls1012a-rdb kmod-hwmon-ina2xx kmod-iio-fxas21002c-i2c kmod-iio-fxos8700-i2c kmod-ppfe 
+Target-Profile-Packages: layerscape-ppfe tfa-ls1012a-rdb kmod-hwmon-ina2xx kmod-iio-fxas21002c-i2c kmod-iio-fxos8700-i2c kmod-ppfe
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,ls1012a-rdb
 
@@ -63,7 +63,7 @@ Build firmware images for NXP LS1012A-RDB
 
 Target-Profile: DEVICE_fsl_ls1012a-frwy-sdboot
 Target-Profile-Name: NXP FRWY-LS1012A
-Target-Profile-Packages:  layerscape-ppfe tfa-ls1012a-frwy-sdboot kmod-ppfe 
+Target-Profile-Packages: layerscape-ppfe tfa-ls1012a-frwy-sdboot kmod-ppfe
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,ls1012a-frwy-sdboot
 
@@ -77,7 +77,7 @@ Build firmware images for NXP FRWY-LS1012A
 
 Target-Profile: DEVICE_fsl_ls1043a-rdb
 Target-Profile-Name: NXP LS1043A-RDB Default
-Target-Profile-Packages:  layerscape-fman tfa-ls1043a-rdb fmc fmc-eth-config kmod-ahci-qoriq kmod-hwmon-ina2xx kmod-hwmon-lm90 
+Target-Profile-Packages: layerscape-fman tfa-ls1043a-rdb fmc fmc-eth-config kmod-ahci-qoriq kmod-hwmon-ina2xx kmod-hwmon-lm90
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,ls1043a-rdb
 
@@ -91,7 +91,7 @@ Build firmware images for NXP LS1043A-RDB Default
 
 Target-Profile: DEVICE_fsl_ls1043a-rdb-sdboot
 Target-Profile-Name: NXP LS1043A-RDB SD Card Boot
-Target-Profile-Packages:  layerscape-fman tfa-ls1043a-rdb-sdboot fmc fmc-eth-config kmod-ahci-qoriq kmod-hwmon-ina2xx kmod-hwmon-lm90 
+Target-Profile-Packages: layerscape-fman tfa-ls1043a-rdb-sdboot fmc fmc-eth-config kmod-ahci-qoriq kmod-hwmon-ina2xx kmod-hwmon-lm90
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,ls1043a-rdb-sdboot
 
@@ -105,7 +105,7 @@ Build firmware images for NXP LS1043A-RDB SD Card Boot
 
 Target-Profile: DEVICE_fsl_ls1046a-frwy
 Target-Profile-Name: NXP FRWY-LS1046A Default
-Target-Profile-Packages:  layerscape-fman tfa-ls1046a-frwy 
+Target-Profile-Packages: layerscape-fman tfa-ls1046a-frwy
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,ls1046a-frwy
 
@@ -119,7 +119,7 @@ Build firmware images for NXP FRWY-LS1046A Default
 
 Target-Profile: DEVICE_fsl_ls1046a-frwy-sdboot
 Target-Profile-Name: NXP FRWY-LS1046A SD Card Boot
-Target-Profile-Packages:  layerscape-fman tfa-ls1046a-frwy-sdboot 
+Target-Profile-Packages: layerscape-fman tfa-ls1046a-frwy-sdboot
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,ls1046a-frwy-sdboot
 
@@ -133,7 +133,7 @@ Build firmware images for NXP FRWY-LS1046A SD Card Boot
 
 Target-Profile: DEVICE_fsl_ls1046a-rdb
 Target-Profile-Name: NXP LS1046A-RDB Default
-Target-Profile-Packages:  layerscape-fman tfa-ls1046a-rdb fmc fmc-eth-config kmod-ahci-qoriq kmod-hwmon-ina2xx kmod-hwmon-lm90 
+Target-Profile-Packages: layerscape-fman tfa-ls1046a-rdb fmc fmc-eth-config kmod-ahci-qoriq kmod-hwmon-ina2xx kmod-hwmon-lm90
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,ls1046a-rdb
 
@@ -147,7 +147,7 @@ Build firmware images for NXP LS1046A-RDB Default
 
 Target-Profile: DEVICE_fsl_ls1046a-rdb-sdboot
 Target-Profile-Name: NXP LS1046A-RDB SD Card Boot
-Target-Profile-Packages:  layerscape-fman tfa-ls1046a-rdb-sdboot fmc fmc-eth-config kmod-ahci-qoriq kmod-hwmon-ina2xx kmod-hwmon-lm90 
+Target-Profile-Packages: layerscape-fman tfa-ls1046a-rdb-sdboot fmc fmc-eth-config kmod-ahci-qoriq kmod-hwmon-ina2xx kmod-hwmon-lm90
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,ls1046a-rdb-sdboot
 
@@ -161,7 +161,7 @@ Build firmware images for NXP LS1046A-RDB SD Card Boot
 
 Target-Profile: DEVICE_fsl_ls1088a-rdb
 Target-Profile-Name: NXP LS1088A-RDB Default
-Target-Profile-Packages:  layerscape-mc layerscape-dpl tfa-ls1088a-rdb restool kmod-ahci-qoriq kmod-hwmon-ina2xx kmod-hwmon-lm90 
+Target-Profile-Packages: layerscape-mc layerscape-dpl tfa-ls1088a-rdb restool kmod-ahci-qoriq kmod-hwmon-ina2xx kmod-hwmon-lm90
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,ls1088a-rdb
 
@@ -175,7 +175,7 @@ Build firmware images for NXP LS1088A-RDB Default
 
 Target-Profile: DEVICE_fsl_ls1088a-rdb-sdboot
 Target-Profile-Name: NXP LS1088A-RDB SD Card Boot
-Target-Profile-Packages:  layerscape-mc layerscape-dpl tfa-ls1088a-rdb-sdboot restool kmod-ahci-qoriq kmod-hwmon-ina2xx kmod-hwmon-lm90 
+Target-Profile-Packages: layerscape-mc layerscape-dpl tfa-ls1088a-rdb-sdboot restool kmod-ahci-qoriq kmod-hwmon-ina2xx kmod-hwmon-lm90
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,ls1088a-rdb-sdboot
 
@@ -189,7 +189,7 @@ Build firmware images for NXP LS1088A-RDB SD Card Boot
 
 Target-Profile: DEVICE_fsl_ls2088a-rdb
 Target-Profile-Name: NXP LS2088ARDB
-Target-Profile-Packages:  layerscape-mc layerscape-dpl tfa-ls2088a-rdb restool kmod-ahci-qoriq 
+Target-Profile-Packages: layerscape-mc layerscape-dpl tfa-ls2088a-rdb restool kmod-ahci-qoriq
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,ls2088a-rdb
 
@@ -203,7 +203,7 @@ Build firmware images for NXP LS2088ARDB
 
 Target-Profile: DEVICE_fsl_lx2160a-rdb
 Target-Profile-Name: NXP LX2160A-RDB Rev2.0 silicon
-Target-Profile-Packages:  layerscape-mc layerscape-dpl layerscape-ddr-phy tfa-lx2160a-rdb restool 
+Target-Profile-Packages: layerscape-mc layerscape-dpl layerscape-ddr-phy tfa-lx2160a-rdb restool
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,lx2160a-rdb
 
@@ -217,7 +217,7 @@ Build firmware images for NXP LX2160A-RDB Rev2.0 silicon
 
 Target-Profile: DEVICE_fsl_lx2160a-rdb-sdboot
 Target-Profile-Name: NXP LX2160A-RDB Rev2.0 silicon SD Card Boot
-Target-Profile-Packages:  layerscape-mc layerscape-dpl layerscape-ddr-phy tfa-lx2160a-rdb-sdboot restool 
+Target-Profile-Packages: layerscape-mc layerscape-dpl layerscape-ddr-phy tfa-lx2160a-rdb-sdboot restool
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,lx2160a-rdb-sdboot
 
@@ -231,7 +231,7 @@ Build firmware images for NXP LX2160A-RDB Rev2.0 silicon SD Card Boot
 
 Target-Profile: DEVICE_traverse_ls1043
 Target-Profile-Name: Traverse LS1043 Boards
-Target-Profile-Packages:  layerscape-fman uboot-envtools kmod-i2c-mux-pca954x kmod-hwmon-core kmod-gpio-pca953x kmod-input-gpio-keys-polled kmod-rtc-isl1208 
+Target-Profile-Packages: layerscape-fman uboot-envtools kmod-i2c-mux-pca954x kmod-hwmon-core kmod-gpio-pca953x kmod-input-gpio-keys-polled kmod-rtc-isl1208
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: traverse,ls1043s traverse,ls1043v
 
@@ -262,7 +262,7 @@ Target-Description:
 Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-wolfssl logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe kmod-usb3 kmod-usb-dwc3 kmod-usb-storage mkf2fs e2fsprogs partx-utils 
 Target-Profile: DEVICE_fsl_ls1021a-twr
 Target-Profile-Name: NXP TWR-LS1021A Default
-Target-Profile-Packages:  layerscape-rcw 
+Target-Profile-Packages: layerscape-rcw
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,ls1021a-twr
 
@@ -276,7 +276,7 @@ Build firmware images for NXP TWR-LS1021A Default
 
 Target-Profile: DEVICE_fsl_ls1021a-twr-sdboot
 Target-Profile-Name: NXP TWR-LS1021A SD Card Boot
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: fsl,ls1021a-twr-sdboot
 
@@ -290,7 +290,7 @@ Build firmware images for NXP TWR-LS1021A SD Card Boot
 
 Target-Profile: DEVICE_fsl_ls1021a-iot-sdboot
 Target-Profile-Name: NXP LS1021A-IoT SD Card Boot
-Target-Profile-Packages:  
+Target-Profile-Packages: 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: 
 

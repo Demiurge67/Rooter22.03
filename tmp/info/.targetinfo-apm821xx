@@ -42,7 +42,7 @@ Target-Profile-Description:
 
 Target-Profile: DEVICE_meraki_mr24
 Target-Profile-Name: Cisco Meraki MR24
-Target-Profile-Packages: kmod-spi-gpio -swconfig 
+Target-Profile-Packages: kmod-spi-gpio -swconfig
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: meraki,mr24 mr24
 
@@ -56,7 +56,7 @@ Build firmware images for Cisco Meraki MR24
 
 Target-Profile: DEVICE_meraki_mx60
 Target-Profile-Name: Cisco Meraki MX60W (Cisco Meraki MX60)
-Target-Profile-Packages: kmod-spi-gpio kmod-usb-ledtrig-usbport kmod-usb-dwc2 kmod-usb-storage block-mount 
+Target-Profile-Packages: kmod-spi-gpio kmod-usb-ledtrig-usbport kmod-usb-dwc2 kmod-usb-storage block-mount
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: meraki,mx60
 
@@ -71,7 +71,7 @@ Alternative device titles:
 
 Target-Profile: DEVICE_meraki_mx60
 Target-Profile-Name: Cisco Meraki MX60
-Target-Profile-Packages: kmod-spi-gpio kmod-usb-ledtrig-usbport kmod-usb-dwc2 kmod-usb-storage block-mount 
+Target-Profile-Packages: kmod-spi-gpio kmod-usb-ledtrig-usbport kmod-usb-dwc2 kmod-usb-storage block-mount
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: meraki,mx60
 
@@ -86,7 +86,7 @@ Alternative device titles:
 
 Target-Profile: DEVICE_netgear_wndap620
 Target-Profile-Name: NETGEAR WNDAP620 (Premium Wireless-N)
-Target-Profile-Packages: kmod-eeprom-at24 
+Target-Profile-Packages: kmod-eeprom-at24
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: netgear,wndap620
 
@@ -100,7 +100,7 @@ Build firmware images for NETGEAR WNDAP620 (Premium Wireless-N)
 
 Target-Profile: DEVICE_netgear_wndap660
 Target-Profile-Name: NETGEAR WNDAP660 (Dual Radio Dual Band Wireless-N)
-Target-Profile-Packages: kmod-eeprom-at24 
+Target-Profile-Packages: kmod-eeprom-at24
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: netgear,wndap660
 
@@ -114,7 +114,7 @@ Build firmware images for NETGEAR WNDAP660 (Dual Radio Dual Band Wireless-N)
 
 Target-Profile: DEVICE_netgear_wndr4700
 Target-Profile-Name: NETGEAR Centria N900 WNDR4720 (NETGEAR Centria N900 WNDR4700)
-Target-Profile-Packages: badblocks block-mount e2fsprogs kmod-hwmon-drivetemp kmod-dm kmod-fs-ext4 kmod-fs-vfat kmod-usb-ledtrig-usbport kmod-md-mod kmod-nls-cp437 kmod-nls-iso8859-1 kmod-nls-iso8859-15 kmod-nls-utf8 kmod-usb3 kmod-usb-dwc2 kmod-usb-storage partx-utils 
+Target-Profile-Packages: badblocks block-mount e2fsprogs kmod-hwmon-drivetemp kmod-dm kmod-fs-ext4 kmod-fs-vfat kmod-usb-ledtrig-usbport kmod-md-mod kmod-nls-cp437 kmod-nls-iso8859-1 kmod-nls-iso8859-15 kmod-nls-utf8 kmod-usb3 kmod-usb-dwc2 kmod-usb-storage partx-utils
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: netgear,wndr4700 wndr4700
 
@@ -129,7 +129,7 @@ Alternative device titles:
 
 Target-Profile: DEVICE_netgear_wndr4700
 Target-Profile-Name: NETGEAR Centria N900 WNDR4700
-Target-Profile-Packages: badblocks block-mount e2fsprogs kmod-hwmon-drivetemp kmod-dm kmod-fs-ext4 kmod-fs-vfat kmod-usb-ledtrig-usbport kmod-md-mod kmod-nls-cp437 kmod-nls-iso8859-1 kmod-nls-iso8859-15 kmod-nls-utf8 kmod-usb3 kmod-usb-dwc2 kmod-usb-storage partx-utils 
+Target-Profile-Packages: badblocks block-mount e2fsprogs kmod-hwmon-drivetemp kmod-dm kmod-fs-ext4 kmod-fs-vfat kmod-usb-ledtrig-usbport kmod-md-mod kmod-nls-cp437 kmod-nls-iso8859-1 kmod-nls-iso8859-15 kmod-nls-utf8 kmod-usb3 kmod-usb-dwc2 kmod-usb-storage partx-utils
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: netgear,wndr4700 wndr4700
 
